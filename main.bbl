@@ -5,11 +5,18 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.52 }
 
-\bibitem[Falkembach e Viero]{falkembach2003aprendizagem}
-\abntrefinfo{Falkembach e Viero}{Falkembach; Viero}{}
-{FALKEMBACH, Gilse Antoninha~Morgental; VIERO, Fabr{\'\i}cio. Aprendizagem de
-  algoritmos: Uso da estrat{\'e}gia ascendente de resolu{\c{c}}{\~a}o de
-  problemas.
-[s.d.].}
+\bibitem[Bosse e Gerosa 2015]{bosse2015reprovaccoes}
+\abntrefinfo{Bosse e Gerosa}{Bosse; Gerosa}{2015}
+{BOSSE, Yorah; GEROSA, Marco~Aur{\'e}lio. Reprova{\c{c}}{\~o}es e trancamentos
+  nas disciplinas de introdu{\c{c}}{\~a}o {\`a} programa{\c{c}}{\~a}o da
+  universidade de s{\~a}o paulo: Um estudo preliminar.  In:  \emph{XXIII
+  WEI--Workshop sobre Educa{\c{c}}{\~a}o em Inform{\'a}tica. Recife, Julho},
+  2015.}
+
+\bibitem[Lahtinen \textit{et al.} 2005]{lahtinen2005study}
+\abntrefinfo{Lahtinen \textit{et al.}}{Lahtinen \textit{et al.}}{2005}
+{LAHTINEN, Essi; ALA-MUTKA, Kirsti; J{\"A}RVINEN, Hannu-Matti. A study of the
+  difficulties of novice programmers. In:  Acm.  \emph{ACM SIGCSE Bulletin},
+  2005. v.~37, n.~3, p. 14--18.}
 
 \end{thebibliography}

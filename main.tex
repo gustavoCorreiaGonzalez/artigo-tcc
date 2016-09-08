@@ -64,15 +64,15 @@
 
 
 % Dados do TCC (precisa alterar)
-\author{}  % Seu nome
+\author{Gustavo Correia Gonzalez}  % Seu nome
 \title{} % Título do trabalho
 \titleen{} % Título traduzido para inglês
-\advisor{} % Nome do orientador. Lembre-se de prefixar com "Prof. Dr.", "Profª. Drª.", "Prof. Me." ou "Profª. Me."}
+\advisor{Prof. Dr. Igor Scaliante Wiese} % Nome do orientador. Lembre-se de prefixar com "Prof. Dr.", "Profª. Drª.", "Prof. Me." ou "Profª. Me."}
 % \coadvisor{} % Nome do coorientador, caso exista. Caso não exista, comente a linha.
 \depositshortdate{2016} % Ano em que depositou este documento
 
 % Dados da ficha catalografica. Ela é opcional, mas é uma boa ideia inserí-la. Exemplos para geração (http://fichacatalografica.sibi.ufrj.br/)
-\fichacatautor{}  % Nome conforme citado (ou seja, no formato "Sobrenome, Nome").
+\fichacatautor{Gonzalez, Gustavo}  % Nome conforme citado (ou seja, no formato "Sobrenome, Nome").
 \fichacatbib{Biblioteca da UTFPR de Campo Mourão} % Não alterar
 \fichacatpum{M488} % Código Cutter-Sanborn. Use a primeira letra do sobrenome seguido do número conforme as primeiras letras do sobrenome e a tabela http://www.amormino.com.br/cutter-sanborn/cutter1.html
 \fichacatpalcha{} % Assuntos do trabalho. Cada item deve ser enumerado e separado por ponto: 1. xxx. 2. yyy. 3. zzz.
@@ -87,12 +87,28 @@
 \begin{resumo}
 % TODO: se possível, escreva um resumo estruturado. Para TCC 1, o resumo estruturado teria os seguintes elementos:
 
-teste \cite{falkembach2003aprendizagem}
+O elevado nível de reprovação em disciplinas onde são ensinados conceitos básicos de programação, em qualquer grau de ensino, é um problema enfrentado por muitos alunos e tem sido alvo de variadas pesquisas. Existe um conjunto de razões que estão relacionadas com a origem do problema, como o método de ensino e aprendizagem, falta de algumas competências e interesse por parte dos alunos, e a própria dificuldade do tema.
 
-% \textbf{Contexto:} \\
-% \textbf{Objetivo:} \\
-% \textbf{Método:} \\
-% \textbf{Resultados esperados:} 
+\textbf{Contexto:} O desenvolvimento da pesquisa será realizado na Universidade Tecnológia Federal do Paraná, com alunos que selecionados entre as disciplinas de programação.
+
+\textbf{Objetivo:} Responder duas questões de pesquisa descritas como:
+
+\begin{itemize}
+	\item \textbf{QP}\textsubscript{1}: 
+	\textit{Qual o impacto do Hint para minimizar erros e melhorar soluções de exercícios?}
+	
+	Esta questão de pesquisa tem como objetivo investigar se o hint irá ajudar os alunos a obterem melhores resultados na execução de exercícios de programação. Também será avaliado e classificado os melhores hints e se o perfil do usuário influencia na classificação. 
+	
+	\item \textbf{QP}\textsubscript{2}: 
+	\textit{Ainda não achei um nome massa :/}
+	
+	Para responder essa questão será realizando um estudo controlado com três grupos de alunos distribuídos de forma homogênea em relação ao nível de conhecimento na programação. O primeiro grupo receberá hints classificadas a partir de erros anteriores, o segundo será com hints fixos e o terceiro sem hints.
+	
+\end{itemize}
+
+\textbf{Método:} Será desenvolvido um software para auxiliar na aprendizado de programação que utilizá um sistema de dicas fornecido pelos usuários quando realizarem os exercícios. E para validar a eficiência do software será realizado um estudo com três grupos distintos de alunos que utilizaram o sistema em um ambiente controlado.
+
+\textbf{Resultados esperados:} Esperamos que o software realmente ajude no aprendizado dos alunos na programação, assim diminuindo o número de reprovações nas matérias introdutórias de programação e em desistências do curso de ciência computação.
 % ou, para TCC 2:
 % \textbf{Contexto:} \\
 % \textbf{Objetivo:} \\
@@ -101,7 +117,7 @@ teste \cite{falkembach2003aprendizagem}
 % \textbf{Conclusões:}
 
 % Palavras-chaves, separadas por ponto (tente não definir mais do que cinco)
-\palavraschaves{}
+\palavraschaves{Aplicação, Personalized Hints, Learnersourcing}
 \end{resumo}
 
 
@@ -129,7 +145,7 @@ teste \cite{falkembach2003aprendizagem}
 
 \mainmatter
 % TODO: incluir arquivos latex com os capítulos
-% \include{introducao}
+\include{introducao}
 % \include{referencial-teorico}
 % \include{proposta}
 % \include{resultados-preliminares}

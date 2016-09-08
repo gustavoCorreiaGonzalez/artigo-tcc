@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
+A level-1 auxiliary file: introducao.aux
 The style file: abnt-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -17,50 +18,55 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+You can't pop an empty literal stack for entry bosse2015reprovaccoes
+while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry lahtinen2005study
+while executing---line 2180 of file abnt-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliografico abnt-alf.bst versao 1.52           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 9 entries,
+You've used 10 entries,
             6523 wiz_defined-function locations,
-            1174 strings with 9554 characters,
-and the built_in function-call counts, 3345 in all, are:
-= -- 307
-> -- 35
-< -- 3
-+ -- 62
-- -- 13
-* -- 138
-:= -- 405
-add.period$ -- 3
-call.type$ -- 12
-change.case$ -- 35
-chr.to.int$ -- 14
-cite$ -- 1
-duplicate$ -- 65
-empty$ -- 440
-format.name$ -- 47
-if$ -- 911
+            1185 strings with 9854 characters,
+and the built_in function-call counts, 4571 in all, are:
+= -- 413
+> -- 78
+< -- 7
++ -- 79
+- -- 25
+* -- 237
+:= -- 550
+add.period$ -- 10
+call.type$ -- 13
+change.case$ -- 50
+chr.to.int$ -- 18
+cite$ -- 2
+duplicate$ -- 120
+empty$ -- 547
+format.name$ -- 108
+if$ -- 1224
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 100
-newline$ -- 13
-num.names$ -- 5
-pop$ -- 79
+missing$ -- 118
+newline$ -- 16
+num.names$ -- 10
+pop$ -- 101
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 33
 quote$ -- 0
-skip$ -- 491
+skip$ -- 551
 stack$ -- 1
-substring$ -- 86
-swap$ -- 12
-text.length$ -- 0
+substring$ -- 141
+swap$ -- 45
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 1
 warning$ -- 0
-while$ -- 7
+while$ -- 17
 width$ -- 0
-write$ -- 21
+write$ -- 42
+(There were 2 error messages)
