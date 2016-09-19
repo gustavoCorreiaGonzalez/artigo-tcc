@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introducao.aux
+A level-1 auxiliary file: referencial-teorico.aux
 The style file: abnt-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -20,7 +21,13 @@ Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 You can't pop an empty literal stack for entry bosse2015reprovaccoes
 while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Cukierman:2015:PSU:2729094.2742623
+while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Holcomb:2016:RCA:2839509.2851062
+while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry lahtinen2005study
+while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Sinclair:2015:MSE:2729094.2742586
 while executing---line 2180 of file abnt-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliografico abnt-alf.bst versao 1.52           |
@@ -28,45 +35,45 @@ while executing---line 2180 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 10 entries,
+You've used 13 entries,
             6523 wiz_defined-function locations,
-            1185 strings with 9854 characters,
-and the built_in function-call counts, 4571 in all, are:
-= -- 413
-> -- 78
-< -- 7
-+ -- 79
-- -- 25
-* -- 237
-:= -- 550
-add.period$ -- 10
-call.type$ -- 13
-change.case$ -- 50
-chr.to.int$ -- 18
-cite$ -- 2
-duplicate$ -- 120
-empty$ -- 547
-format.name$ -- 108
-if$ -- 1224
+            1212 strings with 10905 characters,
+and the built_in function-call counts, 7639 in all, are:
+= -- 691
+> -- 174
+< -- 10
++ -- 117
+- -- 54
+* -- 467
+:= -- 938
+add.period$ -- 31
+call.type$ -- 16
+change.case$ -- 84
+chr.to.int$ -- 21
+cite$ -- 5
+duplicate$ -- 268
+empty$ -- 791
+format.name$ -- 253
+if$ -- 1982
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 118
-newline$ -- 16
-num.names$ -- 10
-pop$ -- 101
+missing$ -- 173
+newline$ -- 31
+num.names$ -- 25
+pop$ -- 156
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 45
 quote$ -- 0
-skip$ -- 551
+skip$ -- 719
 stack$ -- 1
-substring$ -- 141
-swap$ -- 45
-text.length$ -- 3
+substring$ -- 292
+swap$ -- 131
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1
+type$ -- 4
 warning$ -- 0
-while$ -- 17
+while$ -- 44
 width$ -- 0
-write$ -- 42
-(There were 2 error messages)
+write$ -- 99
+(There were 5 error messages)

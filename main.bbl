@@ -13,10 +13,38 @@
   WEI--Workshop sobre Educa{\c{c}}{\~a}o em Inform{\'a}tica. Recife, Julho},
   2015.}
 
+\bibitem[Cukierman 2015]{Cukierman:2015:PSU:2729094.2742623}
+\abntrefinfo{Cukierman}{Cukierman}{2015}
+{CUKIERMAN, Diana. Predicting success in university first year computing
+  science courses: The role of student participation in reflective learning
+  activities and in i-clicker activities.  In:  \emph{Proceedings of the 2015
+  ACM Conference on Innovation and Technology in Computer Science Education},
+  2015.  (ITiCSE '15), p. 248--253.
+ISBN 978-1-4503-3440-2. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2729094.2742623}.}
+
+\bibitem[Holcomb e Simone 2016]{Holcomb:2016:RCA:2839509.2851062}
+\abntrefinfo{Holcomb e Simone}{Holcomb; Simone}{2016}
+{HOLCOMB, Kayla~M.; SIMONE, Nevan~F. The role of chronology in analyzing
+  introductory programming assignments (abstract only).  In:  \emph{Proceedings
+  of the 47th ACM Technical Symposium on Computing Science Education}, 2016.
+  (SIGCSE '16), p. 725--726.
+ISBN 978-1-4503-3685-7. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2839509.2851062}.}
+
 \bibitem[Lahtinen \textit{et al.} 2005]{lahtinen2005study}
 \abntrefinfo{Lahtinen \textit{et al.}}{Lahtinen \textit{et al.}}{2005}
 {LAHTINEN, Essi; ALA-MUTKA, Kirsti; J{\"A}RVINEN, Hannu-Matti. A study of the
   difficulties of novice programmers. In:  Acm.  \emph{ACM SIGCSE Bulletin},
   2005. v.~37, n.~3, p. 14--18.}
+
+\bibitem[Sinclair \textit{et al.} 2015]{Sinclair:2015:MSE:2729094.2742586}
+\abntrefinfo{Sinclair \textit{et al.}}{Sinclair \textit{et al.}}{2015}
+{SINCLAIR, Jane; BUTLER, Matthew; MORGAN, Michael; KALVALA, Sara. Measures of
+  student engagement in computer science.  In:  \emph{Proceedings of the 2015
+  ACM Conference on Innovation and Technology in Computer Science Education},
+  2015.  (ITiCSE '15), p. 242--247.
+ISBN 978-1-4503-3440-2. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2729094.2742586}.}
 
 \end{thebibliography}

@@ -68,7 +68,7 @@
 \title{} % Título do trabalho
 \titleen{} % Título traduzido para inglês
 \advisor{Prof. Dr. Igor Scaliante Wiese} % Nome do orientador. Lembre-se de prefixar com "Prof. Dr.", "Profª. Drª.", "Prof. Me." ou "Profª. Me."}
-% \coadvisor{} % Nome do coorientador, caso exista. Caso não exista, comente a linha.
+\coadvisor{Prof. Dr. Marco Aurélio Graciotto Silva} % Nome do coorientador, caso exista. Caso não exista, comente a linha.
 \depositshortdate{2016} % Ano em que depositou este documento
 
 % Dados da ficha catalografica. Ela é opcional, mas é uma boa ideia inserí-la. Exemplos para geração (http://fichacatalografica.sibi.ufrj.br/)
@@ -87,28 +87,28 @@
 \begin{resumo}
 % TODO: se possível, escreva um resumo estruturado. Para TCC 1, o resumo estruturado teria os seguintes elementos:
 
-O elevado nível de reprovação em disciplinas onde são ensinados conceitos básicos de programação, em qualquer grau de ensino, é um problema enfrentado por muitos alunos e tem sido alvo de variadas pesquisas. Existe um conjunto de razões que estão relacionadas com a origem do problema, como o método de ensino e aprendizagem, falta de algumas competências e interesse por parte dos alunos, e a própria dificuldade do tema.
+O elevado nível de reprovação em disciplinas onde são ensinados conceitos básicos de programação \cite{Holcomb:2016:RCA:2839509.2851062}, em qualquer grau de ensino, é um problema enfrentado por muitos alunos e tem sido alvo de variadas pesquisas. Existe um conjunto de razões que estão relacionadas com a origem do problema, como o método de ensino e aprendizagem, falta de algumas competências e interesse por parte dos alunos \cite{Sinclair:2015:MSE:2729094.2742586}, e a própria dificuldade do tema.
 
-\textbf{Contexto:} O desenvolvimento da pesquisa será realizado na Universidade Tecnológica Federal do Paraná, com alunos que selecionados entre as disciplinas de programação.
+\textbf{Contexto:} O desenvolvimento da pesquisa será realizado na Universidade Tecnológica Federal do Paraná, com alunos selecionados entre o primeiro e segundo ano da matéria de Algoritmos e Algoritmos e Estruturas de Dados 1.
 
-\textbf{Objetivo:} Responder duas questões de pesquisa descritas como:
+\textbf{Objetivo:} Investigar o impacto do uso do mecanismo de dicas personalizadas no ensino de conceitos básicos de programação, mais expecificamente em estrutura de condição e laço de repetição. Para atingir esse objetivo, foram criadas duas questões de pesquisas descritas como:
 
 \begin{itemize}
 	\item \textbf{QP}\textsubscript{1}: 
-	\textit{Qual o impacto do Hint para minimizar erros e melhorar soluções de exercícios?}
+	\textit{Existe impacto do uso do mecanismo de dicas para minimizar erros e melhorar soluções de exercícios?}
 	
-	Esta questão de pesquisa tem como objetivo investigar se o hint irá ajudar os alunos a obterem melhores resultados na execução de exercícios de programação. Também será avaliado e classificado os melhores hints e se o perfil do usuário influencia na classificação. 
+	Esta questão de pesquisa tem como objetivo investigar se o mecanismo de dicas irá ajudar os alunos a obterem melhores resultados na execução de exercícios de programação. 
 	
 	\item \textbf{QP}\textsubscript{2}: 
-	\textit{Ainda não achei um nome massa :/}
+	\textit{Quais dicas personalizadas ajudam mais os alunos?}
 	
-	Para responder essa questão será realizando um estudo controlado com três grupos de alunos distribuídos de forma homogênea em relação ao nível de conhecimento na programação. O primeiro grupo receberá hints classificadas a partir de erros anteriores, o segundo será com hints fixos e o terceiro sem hints.
+	Esta questão de pesquisa avaliará qual tipo de dica é melhor, podendo ser randomizadas em função do tipo do exercício, geradas a partir de erros cometidos em exercícios passados e sem dicas. Levando em consideração a fonte da dica gerada, podendo ser por alunos iniciantes, alunos experientes ou professores.
 	
 \end{itemize}
 
-\textbf{Método:} Será desenvolvido um software para auxiliar na aprendizado de programação que utilizá um sistema de dicas fornecido pelos usuários quando realizarem os exercícios. E para validar a eficiência do software será realizado um estudo com três grupos distintos de alunos que utilizaram o sistema em um ambiente controlado.
+\textbf{Método:} Será desenvolvido um software para auxiliar o aprendizado de programação que utilizá um sistema de dicas personalizadas aos alunos no momento da realização de exercícios. Para validar a eficiência do software será realizando um estudo controlado com três grupos de alunos distribuídos de forma homogênea em relação ao nível de conhecimento na programação. O primeiro grupo receberá dicas classificadas a partir de erros anteriores, o segundo será com dicas randomizadas levando em consideração o assunto abordado no exercício e o terceiro sem dicas.
 
-\textbf{Resultados esperados:} Esperamos que o software realmente ajude no aprendizado dos alunos na programação, assim diminuindo o número de reprovações nas matérias introdutórias de programação e em desistências do curso de ciência computação.
+\textbf{Resultados esperados:} Esperamos que o software realmente ajude no aprendizado dos alunos na programação tornando o ensino mais dinâmico e personalizado. Para que no futuro possa diminuir o número de reprovações nas matérias introdutórias de programação e em desistências do curso de Ciência da Computação.
 % ou, para TCC 2:
 % \textbf{Contexto:} \\
 % \textbf{Objetivo:} \\
@@ -117,7 +117,7 @@ O elevado nível de reprovação em disciplinas onde são ensinados conceitos b�
 % \textbf{Conclusões:}
 
 % Palavras-chaves, separadas por ponto (tente não definir mais do que cinco)
-\palavraschaves{Aplicação, Personalized Hints, Learnersourcing}
+\palavraschaves{Aplicação, Dicas, Dicas Personalizadas, Learnersourcing, Crowdsourcing}
 \end{resumo}
 
 
@@ -146,7 +146,7 @@ O elevado nível de reprovação em disciplinas onde são ensinados conceitos b�
 \mainmatter
 % TODO: incluir arquivos latex com os capítulos
 \include{introducao}
-% \include{referencial-teorico}
+%\include{referencial-teorico}
 % \include{proposta}
 % \include{resultados-preliminares}
 
