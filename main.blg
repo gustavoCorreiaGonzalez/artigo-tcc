@@ -23,9 +23,17 @@ You can't pop an empty literal stack for entry bosse2015reprovaccoes
 while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry Cukierman:2015:PSU:2729094.2742623
 while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Cummins:2016:IUH:2876034.2893379
+while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Elkherj:2014:SSR:2556325.2567864
+while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Helminen:2010:JPV:1879211.1879234
+while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry Holcomb:2016:RCA:2839509.2851062
 while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry lahtinen2005study
+while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Price:2015:IIF:2787622.2787748
 while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry Sinclair:2015:MSE:2729094.2742586
 while executing---line 2180 of file abnt-alf.bst
@@ -35,45 +43,45 @@ while executing---line 2180 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 13 entries,
+You've used 17 entries,
             6523 wiz_defined-function locations,
-            1212 strings with 10905 characters,
-and the built_in function-call counts, 7639 in all, are:
-= -- 691
-> -- 174
-< -- 10
-+ -- 117
-- -- 54
-* -- 467
-:= -- 938
-add.period$ -- 31
-call.type$ -- 16
-change.case$ -- 84
-chr.to.int$ -- 21
-cite$ -- 5
-duplicate$ -- 268
-empty$ -- 791
-format.name$ -- 253
-if$ -- 1982
+            1250 strings with 12230 characters,
+and the built_in function-call counts, 11816 in all, are:
+= -- 1069
+> -- 310
+< -- 14
++ -- 171
+- -- 95
+* -- 783
+:= -- 1462
+add.period$ -- 59
+call.type$ -- 20
+change.case$ -- 131
+chr.to.int$ -- 25
+cite$ -- 9
+duplicate$ -- 469
+empty$ -- 1118
+format.name$ -- 459
+if$ -- 3011
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 173
-newline$ -- 31
-num.names$ -- 25
-pop$ -- 156
+missing$ -- 248
+newline$ -- 51
+num.names$ -- 45
+pop$ -- 232
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 61
 quote$ -- 0
-skip$ -- 719
+skip$ -- 947
 stack$ -- 1
-substring$ -- 292
-swap$ -- 131
-text.length$ -- 6
+substring$ -- 493
+swap$ -- 249
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 8
 warning$ -- 0
-while$ -- 44
+while$ -- 80
 width$ -- 0
-write$ -- 99
-(There were 5 error messages)
+write$ -- 175
+(There were 9 error messages)

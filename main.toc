@@ -1,4 +1,7 @@
 \select@language {brazil}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{6}
 \contentsline {chapter}{\numberline {2}Referencial Te\IeC {\'o}rico}{8}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{9}
+\contentsline {section}{\numberline {2.1}Reprova\IeC {\c c}\IeC {\~o}es em mat\IeC {\'e}rias de programa\IeC {\c c}\IeC {\~a}o}{8}
+\contentsline {section}{\numberline {2.2}Novas abrodagens de ensino}{8}
+\contentsline {section}{\numberline {2.3}Sistemas de dicas}{8}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{10}

@@ -23,6 +23,31 @@
 ISBN 978-1-4503-3440-2. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/2729094.2742623}.}
 
+\bibitem[Cummins \textit{et al.} 2016]{Cummins:2016:IUH:2876034.2893379}
+\abntrefinfo{Cummins \textit{et al.}}{Cummins \textit{et al.}}{2016}
+{CUMMINS, Stephen; STEAD, Alistair; JARDINE-WRIGHT, Lisa; DAVIES, Ian;
+  BERESFORD, Alastair~R.; RICE, Andrew. Investigating the use of hints in
+  online problem solving.  In:  \emph{Proceedings of the Third (2016) ACM
+  Conference on Learning @ Scale}, 2016.  (L@S '16), p. 105--108.
+ISBN 978-1-4503-3726-7. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2876034.2893379}.}
+
+\bibitem[Elkherj e Freund 2014]{Elkherj:2014:SSR:2556325.2567864}
+\abntrefinfo{Elkherj e Freund}{Elkherj; Freund}{2014}
+{ELKHERJ, Matthew; FREUND, Yoav. A system for sending the right hint at the
+  right time.  In:  \emph{Proceedings of the First ACM Conference on Learning @
+  Scale Conference}, 2014.  (L@S '14), p. 219--220.
+ISBN 978-1-4503-2669-8. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2556325.2567864}.}
+
+\bibitem[Helminen e Malmi 2010]{Helminen:2010:JPV:1879211.1879234}
+\abntrefinfo{Helminen e Malmi}{Helminen; Malmi}{2010}
+{HELMINEN, Juha; MALMI, Lauri. Jype - a program visualization and programming
+  exercise tool for python.  In:  \emph{Proceedings of the 5th International
+  Symposium on Software Visualization}, 2010.  (SOFTVIS '10), p. 153--162.
+ISBN 978-1-4503-0028-5. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/1879211.1879234}.}
+
 \bibitem[Holcomb e Simone 2016]{Holcomb:2016:RCA:2839509.2851062}
 \abntrefinfo{Holcomb e Simone}{Holcomb; Simone}{2016}
 {HOLCOMB, Kayla~M.; SIMONE, Nevan~F. The role of chronology in analyzing
@@ -37,6 +62,15 @@ ISBN 978-1-4503-3685-7. Dispon{\'\i}vel em:
 {LAHTINEN, Essi; ALA-MUTKA, Kirsti; J{\"A}RVINEN, Hannu-Matti. A study of the
   difficulties of novice programmers. In:  Acm.  \emph{ACM SIGCSE Bulletin},
   2005. v.~37, n.~3, p. 14--18.}
+
+\bibitem[Price 2015]{Price:2015:IIF:2787622.2787748}
+\abntrefinfo{Price}{Price}{2015}
+{PRICE, Thomas~W. Integrating intelligent feedback into block programming
+  environments.  In:  \emph{Proceedings of the Eleventh Annual International
+  Conference on International Computing Education Research}, 2015.  (ICER '15),
+  p. 275--276.
+ISBN 978-1-4503-3630-7. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2787622.2787748}.}
 
 \bibitem[Sinclair \textit{et al.} 2015]{Sinclair:2015:MSE:2729094.2742586}
 \abntrefinfo{Sinclair \textit{et al.}}{Sinclair \textit{et al.}}{2015}
