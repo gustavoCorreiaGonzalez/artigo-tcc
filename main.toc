@@ -4,4 +4,11 @@
 \contentsline {section}{\numberline {2.1}Reprova\IeC {\c c}\IeC {\~o}es em mat\IeC {\'e}rias de programa\IeC {\c c}\IeC {\~a}o}{8}
 \contentsline {section}{\numberline {2.2}Novas abrodagens de ensino}{8}
 \contentsline {section}{\numberline {2.3}Sistemas de dicas}{8}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{10}
+\contentsline {chapter}{\numberline {3}Proposta}{10}
+\contentsline {section}{\numberline {3.1}Descri\IeC {\c c}\IeC {\~a}o do Sistema de Dicas}{10}
+\contentsline {subsection}{\numberline {3.1.1}Cadastro do Usu\IeC {\'a}rio}{10}
+\contentsline {subsection}{\numberline {3.1.2}Realiza\IeC {\c c}\IeC {\~a}o de exerc\IeC {\'\i }cios}{10}
+\contentsline {subsection}{\numberline {3.1.3}Di\IeC {\'a}rio}{11}
+\contentsline {section}{\numberline {3.2}Banco de Dicas}{11}
+\contentsline {section}{\numberline {3.3}Formato do Estudo}{11}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{12}

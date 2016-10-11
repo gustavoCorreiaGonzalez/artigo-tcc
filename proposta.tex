@@ -1,2 +1,23 @@
 \chapter{Proposta}
 
+Neste capítulo apresentaremos o método utilizado para a elaboração deste trabalho.
+
+\section{Descrição do Sistema de Dicas}
+
+Essa seção, descreve o sistema de dicas a ser desenvolvido. O processo de realização de exercícios, que é onde o sistema deve atuar, pode ser dividid em quatro fases: cadastro do usuário, realização de exercícios, utilização de dicas (providas por usuários do sistema) e validação do exercício. A descrição apresentada será usada para a modelagem do sistema.
+
+\subsection{Cadastro do Usuário}
+
+Quando um usuário desejar realizar o cadastro no nosso sistema, ele poderá escolher entre a opção de aluno ou professor. O aluno, realiza exercícios disponíveis no banco de dados do sistema, preenche um diário não obrigatório para cada exercício, cria uma dica para cada exercício e consulta seu perfil com seus dados pessoais e um relatório de suas submissões de exercícios. O professor, além de realizar as mesmas atividades do aluno, também poderá criar salas com exercícios pré definidos e convidar alunos para fazer parte dela e submeter exercícios para o sistema.
+
+\subsection{Realização de exercícios}
+
+Depois de concluído o cadastro de usuário, o aluno ou professor é encaminhado para a tela principal do sistema onde poderá realizar as atividades permitidas para cada tipo de usuário. Caso a opção seja realizar um exercício, o usuário poderá escolher qual tipo de exercício ele deseja realizar e o nível de dificuldade, após preencher esses dados o sistema retornará uma lista com alguns exercícios que satisfazem os campos de busca. O usuário irá escolher um exercício, realiza-lo na linguagem de programação que deseja e submeter para a validação do sistema. O exercício pode ser aceito ou não sistema, caso seja rejeitado o sistema retornará qual tipo de erro ocorreu na compilação do exercício, o usuário poderá realizar submissões até que consiga obter sucesso na submissão. Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \textit{log}, sendo salvo o usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício.
+
+\subsection{Diário}
+
+Após o usuário ter realizado um exercício e obter sucesso, o sistema perguntará se o usuário deseja realizar um diáro para o respectivo exercício, caso aceite, o sistema redirecionará o usuário para a página do diário onde o usuário informará os dados referentes as submissões dos exercícios.
+
+\section{Banco de Dicas}
+
+\section{Formato do Estudo}
