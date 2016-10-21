@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: referencial-teorico.aux
+A level-1 auxiliary file: proposta.aux
 The style file: abnt-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -45,7 +46,7 @@ while executing---line 2180 of file abnt-alf.bst
 +---------------------------------------------------------+
 You've used 17 entries,
             6523 wiz_defined-function locations,
-            1250 strings with 12230 characters,
+            1251 strings with 12242 characters,
 and the built_in function-call counts, 11816 in all, are:
 = -- 1069
 > -- 310

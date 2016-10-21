@@ -1,23 +1,49 @@
 \chapter{Proposta}
 
-Neste capítulo apresentaremos o método utilizado para a elaboração deste trabalho.
+Neste capítulo apresentaremos o método utilizado para a elaboração deste trabalho. A Figura \ref{figura:visaometodo} ilustra cada etapa a ser realizada para o desenvolvimento da abordagem proposta.
 
-\section{Descrição do Sistema de Dicas}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{visaogeraldometodoproposto.png}
+	\caption{Visão geral do método proposto.}
+	\label{figura:visaometodo}
+\end{figure}
+
+Será realizado a implementação do sistema de dicas utilizando o \textit{framework} de desenvolvimento Laravel na versão 5.1. A partir do sistema desenvolvido, será realizado a construção da base de dados de exercícios do qual constituirá de exercícios referentes a estrutura condicional e laço de repetição. Na etapa seguinte a partir do banco de dados de exercícios formaremos o bando de dados de dicas, para realizar essa etapa será necessário a colaboração de alguns voluntários para utilizar o sistema de dicas e realizar os exercícios e fornecer dicas para o banco de dicas. Em seguida, será realizado um teste do sistema antes da realização do estudo prártico. Por fim, será realizado a etapa de validação que constituirá de três estudos isolados com volutários que utilização o sistema de dicas. A seguir, todas as etapas serão descritas em
+suas respectivas seções.
+
+\section{Implementação do Sistema de Dicas}
 
 Essa seção, descreve o sistema de dicas a ser desenvolvido. O processo de realização de exercícios, que é onde o sistema deve atuar, pode ser dividid em quatro fases: cadastro do usuário, realização de exercícios, utilização de dicas (providas por usuários do sistema) e validação do exercício. A descrição apresentada será usada para a modelagem do sistema.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{sistemadicas.png}
+	\caption{Visão geral do sistema de dicas.}
+	\label{figura:sistemadicas}
+\end{figure}
 
 \subsection{Cadastro do Usuário}
 
 Quando um usuário desejar realizar o cadastro no nosso sistema, ele poderá escolher entre a opção de aluno ou professor. O aluno, realiza exercícios disponíveis no banco de dados do sistema, preenche um diário não obrigatório para cada exercício, cria uma dica para cada exercício e consulta seu perfil com seus dados pessoais e um relatório de suas submissões de exercícios. O professor, além de realizar as mesmas atividades do aluno, também poderá criar salas com exercícios pré definidos e convidar alunos para fazer parte dela e submeter exercícios para o sistema.
 
-\subsection{Realização de exercícios}
+\subsection{Cadastro de Exercícios}
+
+\subsection{Cadastro de Classe}
+
+\subsection{Realização de Exercícios}
 
 Depois de concluído o cadastro de usuário, o aluno ou professor é encaminhado para a tela principal do sistema onde poderá realizar as atividades permitidas para cada tipo de usuário. Caso a opção seja realizar um exercício, o usuário poderá escolher qual tipo de exercício ele deseja realizar e o nível de dificuldade, após preencher esses dados o sistema retornará uma lista com alguns exercícios que satisfazem os campos de busca. O usuário irá escolher um exercício, realiza-lo na linguagem de programação que deseja e submeter para a validação do sistema. O exercício pode ser aceito ou não sistema, caso seja rejeitado o sistema retornará qual tipo de erro ocorreu na compilação do exercício, o usuário poderá realizar submissões até que consiga obter sucesso na submissão. Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \textit{log}, sendo salvo o usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício.
 
-\subsection{Diário}
+\subsection{Cadastro de Dica}
 
-Após o usuário ter realizado um exercício e obter sucesso, o sistema perguntará se o usuário deseja realizar um diáro para o respectivo exercício, caso aceite, o sistema redirecionará o usuário para a página do diário onde o usuário informará os dados referentes as submissões dos exercícios.
+No momento em que o usuário realizar a submissão do exercício para validação no sistema de dicas, caso obtenha sucesso na submissão o sistema apresentará uma \textit{view} com a 
 
-\section{Banco de Dicas}
+\subsection{Cadastro do Diário}
 
-\section{Formato do Estudo}
+Após o usuário ter realizado um exercício e obter sucesso, o sistema perguntará se o usuário deseja realizar a escrita de um diáro para o respectivo exercício, caso aceite, o sistema redirecionará o usuário para a página do diário onde o usuário informará os dados referentes as submissões dos exercícios.
+
+\subsection{Boca}
+
+O software BOCA é escrito predominantemente em PHP, o que permitiria sua execução em qualquer plataforma compatível com tal linguagem. No entanto, o sistema de julgamento depende de scripts Bash e de funcionalidades específicas do sistema operacional Linux (isolamento de recursos/jail). 
+
