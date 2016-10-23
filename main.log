@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  21 OCT 2016 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  23 OCT 2016 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1135,14 +1135,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 LaTeX Warning: Unused global option(s):
     [12pt,a4paper,oneside].
 
-(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux
-
-LaTeX Warning: Label `figura:visaometodo' multiply defined.
-
-
-LaTeX Warning: Label `figura:visaometodo@cref' multiply defined.
-
-))
+(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -1159,7 +1152,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 83.
@@ -1349,30 +1343,30 @@ Cap\'{\i }tulo 2.
 
 
 
-]) [9]
+] [9]) [10]
 \openout2 = `proposta.aux'.
 
  (./proposta.tex
 Cap\'{\i }tulo 3.
-<visaogeraldometodoproposto.png, id=50, 695.59875pt x 83.31125pt>
+<visaogeraldometodoproposto.png, id=53, 695.59875pt x 83.31125pt>
 File: visaogeraldometodoproposto.png Graphic file (type png)
 
 <use visaogeraldometodoproposto.png>
 Package pdftex.def Info: visaogeraldometodoproposto.png used on input line 7.
 (pdftex.def)             Requested size: 469.47049pt x 56.22757pt.
 
-<sistemadicas.png, id=52, 524.96124pt x 434.62375pt>
+<sistemadicas.png, id=55, 524.96124pt x 434.62375pt>
 File: sistemadicas.png Graphic file (type png)
  <use sistemadicas.png>
 Package pdftex.def Info: sistemadicas.png used on input line 21.
 (pdftex.def)             Requested size: 469.47049pt x 388.69734pt.
 
-[10
+[11
 
 
 
- <./visaogeraldometodoproposto.png>] [11 <./sistemadicas.png>]) [12]
-[13] (./main.bbl
+ <./visaogeraldometodoproposto.png>] [12 <./sistemadicas.png>] [13] [14])
+[15] (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1381,27 +1375,23 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14
+ [16
 
 
-]) [15]
+]) [17]
 
 AED: lastpage setting LastPage
-(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
+(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux)) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 91 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15208 strings out of 493029
- 242699 string characters out of 6136234
+ 15219 strings out of 493029
+ 242889 string characters out of 6136234
  415671 words of memory out of 5000000
- 18157 multiletter control sequences out of 15000+600000
- 77207 words of font info for 105 fonts, out of 8000000 for 9000
+ 18164 multiletter control sequences out of 15000+600000
+ 77503 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,94p,1437b,9672s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texm
@@ -1412,10 +1402,10 @@ type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
 public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (17 pages, 290716 bytes).
+Output written on main.pdf (19 pages, 298346 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  22559 words of extra memory for PDF output out of 24883 (max. 10000000)
 
