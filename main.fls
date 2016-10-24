@@ -259,6 +259,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT main.aux
 INPUT main.aux
 INPUT introducao.aux
@@ -353,6 +355,15 @@ INPUT referencial-teorico.tex
 OUTPUT proposta.aux
 INPUT proposta.tex
 INPUT proposta.tex
+INPUT ./visaogeraldometodoproposto.png
+INPUT ./visaogeraldometodoproposto.png
+INPUT ./visaogeraldometodoproposto.png
+INPUT ./visaogeraldometodoproposto.png
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT ./sistemadicas.png
+INPUT ./sistemadicas.png
+INPUT ./sistemadicas.png
+INPUT ./sistemadicas.png
 INPUT main.bbl
 INPUT main.bbl
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -367,8 +378,10 @@ INPUT proposta.aux
 INPUT proposta.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb

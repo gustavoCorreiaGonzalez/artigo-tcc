@@ -1,8 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  23 OCT 2016 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  24 OCT 2016 20:35
 entering extended mode
  restricted \write18 enabled.
+ Source specials enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**main.tex
+**main
 (./main.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
@@ -1354,6 +1356,7 @@ File: visaogeraldometodoproposto.png Graphic file (type png)
 <use visaogeraldometodoproposto.png>
 Package pdftex.def Info: visaogeraldometodoproposto.png used on input line 7.
 (pdftex.def)             Requested size: 469.47049pt x 56.22757pt.
+Package cleveref Info: loaded `english' language definitions on input line 12.
 
 <sistemadicas.png, id=55, 524.96124pt x 434.62375pt>
 File: sistemadicas.png Graphic file (type png)
@@ -1365,7 +1368,15 @@ Package pdftex.def Info: sistemadicas.png used on input line 21.
 
 
 
- <./visaogeraldometodoproposto.png>] [12 <./sistemadicas.png>] [13] [14])
+ <./visaogeraldometodoproposto.png>]
+Package cleveref Info: loaded `english' language definitions on input line 32.
+ [12 <./sistemadicas.png>]
+Package cleveref Info: loaded `english' language definitions on input line 42.
+Package cleveref Info: loaded `english' language definitions on input line 46.
+ [13]
+Package cleveref Info: loaded `english' language definitions on input line 50.
+Package cleveref Info: loaded `english' language definitions on input line 58.
+ [14])
 [15] (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -1387,13 +1398,13 @@ AED: lastpage setting LastPage
 ### semi simple group (level 1) entered at line 91 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15219 strings out of 493029
- 242889 string characters out of 6136234
+ 15247 strings out of 493029
+ 243521 string characters out of 6136234
  415671 words of memory out of 5000000
- 18164 multiletter control sequences out of 15000+600000
+ 18192 multiletter control sequences out of 15000+600000
  77503 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,94p,1437b,9672s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,94p,1433b,9672s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texm
 f/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/
@@ -1402,7 +1413,7 @@ type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
 public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (19 pages, 298346 bytes).
+Output written on main.pdf (19 pages, 298396 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
