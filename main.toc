@@ -1,19 +1,19 @@
 \select@language {brazil}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{6}
-\contentsline {chapter}{\numberline {2}Referencial Te\IeC {\'o}rico}{8}
-\contentsline {section}{\numberline {2.1}Reprova\IeC {\c c}\IeC {\~o}es em mat\IeC {\'e}rias de programa\IeC {\c c}\IeC {\~a}o}{8}
-\contentsline {section}{\numberline {2.2}Sistemas de dicas}{9}
-\contentsline {section}{\numberline {2.3}Abrodagens de ensino gerazaooo}{10}
-\contentsline {chapter}{\numberline {3}Proposta}{11}
-\contentsline {section}{\numberline {3.1}Implementa\IeC {\c c}\IeC {\~a}o do Sistema de Dicas}{11}
+\contentsline {chapter}{\numberline {2}Referencial Te\IeC {\'o}rico}{9}
+\contentsline {section}{\numberline {2.1}Reprova\IeC {\c c}\IeC {\~o}es em disciplinas de programa\IeC {\c c}\IeC {\~a}o}{9}
+\contentsline {section}{\numberline {2.2}Mecanismo de dicas}{10}
+\contentsline {section}{\numberline {2.3}Abrodagens de ensino gerazaooo}{11}
+\contentsline {chapter}{\numberline {3}Proposta}{12}
+\contentsline {section}{\numberline {3.1}Implementa\IeC {\c c}\IeC {\~a}o do Mecanismo de Dicas}{12}
 \contentsline {subsection}{\numberline {3.1.1}Cadastro do Usu\IeC {\'a}rio}{12}
 \contentsline {subsection}{\numberline {3.1.2}Cadastro de Exerc\IeC {\'\i }cios}{13}
-\contentsline {subsection}{\numberline {3.1.3}Cadastro de Classe}{13}
-\contentsline {subsection}{\numberline {3.1.4}Realiza\IeC {\c c}\IeC {\~a}o de Exerc\IeC {\'\i }cios}{13}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Utiliza\IeC {\c c}\IeC {\~a}o das Dicas}{13}
-\contentsline {subsection}{\numberline {3.1.5}Cadastro de Dica}{14}
-\contentsline {subsection}{\numberline {3.1.6}Cadastro do Di\IeC {\'a}rio}{14}
-\contentsline {subsection}{\numberline {3.1.7}Boca}{14}
-\contentsline {section}{\numberline {3.2}Banco de Exerc\IeC {\'\i }cios}{14}
-\contentsline {section}{\numberline {3.3}Banco de Dicas}{15}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{16}
+\contentsline {subsection}{\numberline {3.1.3}Cadastro de Turma}{14}
+\contentsline {subsection}{\numberline {3.1.4}Realiza\IeC {\c c}\IeC {\~a}o de Exerc\IeC {\'\i }cios}{14}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Utiliza\IeC {\c c}\IeC {\~a}o das Dicas}{14}
+\contentsline {subsection}{\numberline {3.1.5}Cadastro de Dica}{15}
+\contentsline {subsection}{\numberline {3.1.6}Cadastro do Di\IeC {\'a}rio}{15}
+\contentsline {subsection}{\numberline {3.1.7}Boca}{15}
+\contentsline {section}{\numberline {3.2}Banco de Exerc\IeC {\'\i }cios}{15}
+\contentsline {section}{\numberline {3.3}Banco de Dicas}{16}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{17}

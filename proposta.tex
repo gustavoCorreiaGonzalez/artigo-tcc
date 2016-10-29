@@ -1,23 +1,24 @@
 \chapter{Proposta}
 
-Neste capítulo apresentaremos o método utilizado para a elaboração deste trabalho. A Figura \ref{figura:visaometodo} ilustra cada etapa a ser realizada para o desenvolvimento da abordagem proposta.
+Neste capítulo apresenta o método utilizado para a elaboração deste trabalho. A Figura \ref{figura:visaometodo} ilustra cada etapa a ser realizada para o desenvolvimento da abordagem proposta.
 
 \begin{figure}[h]
-	\centering
+	\captionsetup{justification=centering}
 	\includegraphics[width=\linewidth]{visaogeraldometodoproposto.png}
 	\caption{Visão geral do método proposto.}
 	\label{figura:visaometodo}
 \end{figure}
 
-Será realizado a implementação do sistema de dicas utilizando o \foreign{framework} de desenvolvimento Laravel na versão 5.1. A partir do sistema desenvolvido, será realizado a construção da base de dados de exercícios do qual constituirá de exercícios referentes a estrutura condicional e laço de repetição. Na etapa seguinte a partir do banco de dados de exercícios formaremos o bando de dados de dicas, para realizar essa etapa será necessário a colaboração de alguns voluntários para utilizar o sistema de dicas e realizar os exercícios e fornecer dicas para o banco de dicas. Em seguida, será realizado um teste do sistema antes da realização do estudo prártico. Por fim, será realizado a etapa de validação que constituirá de três estudos isolados com volutários que utilização o sistema de dicas. A seguir, todas as etapas serão descritas em
-suas respectivas seções.
+Para avaliar o impacto do uso do mecanismo de dicas personalizadas no ensino de conceitos básicos de programação, primeiramente será realizado a implementação do sistema de dicas utilizando o \foreign{framework} de desenvolvimento Laravel na versão 5.1. 
 
-\section{Implementação do Sistema de Dicas}
+%Será realizado a implementação do sistema de dicas utilizando o \foreign{framework} de desenvolvimento Laravel na versão 5.1. A partir do sistema desenvolvido, será realizado a construção da base de dados de exercícios do qual constituirá de exercícios referentes a estrutura condicional e laço de repetição. Na etapa seguinte a partir do banco de dados de exercícios formaremos o bando de dados de dicas, para realizar essa etapa será necessário a colaboração de alguns voluntários para utilizar o sistema de dicas e realizar os exercícios e fornecer dicas para o banco de dicas. Em seguida, será realizado um teste do sistema antes da realização do estudo prártico. Por fim, será realizado a etapa de validação que constituirá de três estudos isolados com volutários que utilização o sistema de dicas. A seguir, todas as etapas serão descritas em suas respectivas seções.
 
-Essa seção, descreve o sistema de dicas a ser desenvolvido. O processo de realização de exercícios, que é onde o sistema deve atuar, pode ser dividid em quatro fases: cadastro do usuário, realização de exercícios, utilização de dicas (providas por usuários do sistema) e validação do exercício. A descrição apresentada será usada para a modelagem do sistema.
+\section{Implementação do Mecanismo de Dicas}
+
+Essa seção, descreve o sistema de dicas a ser desenvolvido. O processo de realização de exercícios, que é onde o sistema deve atuar, pode ser dividi do em quatro fases: cadastro do usuário, realização de exercícios, utilização de dicas (providas por usuários do sistema) e validação do exercício. A descrição apresentada será usada para a modelagem do sistema.
 
 \begin{figure}[h]
-	\centering
+	\captionsetup{justification=centering}
 	\includegraphics[width=\linewidth]{sistemadicas.png}
 	\caption{Visão geral do sistema de dicas.}
 	\label{figura:sistemadicas}
@@ -25,31 +26,39 @@ Essa seção, descreve o sistema de dicas a ser desenvolvido. O processo de real
 
 \subsection{Cadastro do Usuário}
 
-Quando um usuário desejar realizar o cadastro no nosso sistema, ele poderá escolher entre a opção de aluno ou professor. O aluno, realiza exercícios disponíveis no banco de dados do sistema, preenche um diário não obrigatório para cada exercício, cria uma dica para cada exercício e consulta seu perfil com seus dados pessoais e um relatório de suas submissões de exercícios. O professor, além de realizar as mesmas atividades do aluno, também poderá criar salas com exercícios pré definidos e convidar alunos para fazer parte dela e submeter exercícios para o sistema.
+Quando um usuário desejar realizar o cadastro no nosso sistema, ele poderá escolher entre a opção de aluno ou professor. O aluno, realiza exercícios disponíveis no banco de dados do sistema, preenche um diário não obrigatório para cada exercício, cria uma dica para cada exercício e consulta seu perfil com seus dados pessoais e um relatório de suas submissões de exercícios. O professor, além de realizar as mesmas atividades do aluno, também poderá criar salas com exercícios pré-definidos convidando alunos para fazer parte dela e submeter exercícios para o sistema.
 
 \subsection{Cadastro de Exercícios}
 
-Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o usuário terá que cadastrar um enunciado, qual linguagem é para ser utilizada na resolução, o nivel (fácil, médio ou difícil), o tipo (condicional, laço de repetição, função, etc), a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. O professor poderá opinar por adicionar o exercício cadastrado em uma lista de exercícios. 
+Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o usuário terá que cadastrar um enunciado, qual linguagem é para ser utilizada na resolução, o nivel (fácil, médio ou difícil), o tipo do exercício (condicional, laço de repetição, função, etc), a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. O professor poderá opinar por adicionar o exercício cadastrado em uma lista de exercícios. 
 
-\subsection{Cadastro de Classe}
+% TODO: Colocar formato de exemplo de uma resposta% TODO: Trocar para um diagrama de caso de uso
 
-O professor poderá realizar o cadastro de uma classe para adicionar seus alunos e passar as listas de exercícios e acompanhar o rendimento de cada aluno. Para cadastrar uma classe é necessário um nome da classe e um professor, com isso o professor poderá adicionar os alunos desejados.
+\subsection{Cadastro de Turma}
+
+O professor poderá realizar o cadastro de uma classe para adicionar seus alunos e passar as listas de exercícios e acompanhar o rendimento de cada aluno. Para cadastrar uma turma é necessário um nome da turma e um professor, com isso o professor poderá adicionar os alunos desejados.
+
+
+% TODO: Olhei até aqui
+
 
 \subsection{Realização de Exercícios}
 
-Depois de concluído o cadastro de usuário, o aluno ou professor é encaminhado para a tela principal do sistema onde poderá realizar as atividades permitidas para cada tipo de usuário. Caso a opção seja realizar um exercício, o usuário poderá escolher qual tipo e nível de dificuldade do exercício deseja realizar, após preencher esses dados o sistema retornará uma lista com alguns exercícios que satisfazem os campos de busca. O usuário irá escolher um exercício, realiza-lo na linguagem de programação que deseja e submeter para a validação do sistema. 
+Após a conclusão do cadastro de usuário, o aluno ou professor é encaminhado para a tela principal do sistema onde poderá realizar as atividades permitidas para cada tipo de usuário. Caso a opção seja realizar um exercício, o usuário poderá escolher qual tipo e nível de dificuldade do exercício deseja realizar, após preencher esses dados o sistema retornará uma lista com alguns exercícios que satisfazem os campos de busca. O usuário irá escolher um exercício, realiza-lo na linguagem de programação que deseja e submeter para a validação do sistema. 
 
-O exercício poderá estar correto ou não, se estiver correto o sistema irá apresentar uma mensagem de parabenização e irá redirecionar o usuário para página de busca de exercícios, caso seja rejeitado o sistema retornará qual tipo de erro ocorreu na compilação do exercício, o usuário poderá realizar submissões até que consiga obter sucesso na submissão ou requisitar uma dica para o sistema. Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo o usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício.
+O exercício poderá estar correto ou não. Se estiver correto o sistema irá apresentar uma mensagem de parabenização e irá redirecionar o usuário para página de busca de exercícios, caso seja rejeitado o sistema retornará qual tipo de erro ocorreu na compilação do exercício, o usuário poderá realizar submissões até que consiga obter sucesso na submissão ou requisitar uma dica para o sistema. Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo o usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício.
 
 \subsubsection{Utilização das Dicas}
 
-O usuário apenas poderá consultar uma dica caso o exercício enviado para validação não estaja correto e ele escolha a opção de disponibilização de dicas, assim ele terá direito a três dicas selecionadas a partir do \foreign{ranking} que cada dica possui. O usuário irá escolher consultar uma das três dicas e após a consulta é necessário fornecer uma nota para a dica escolhida. Assim o usuário poderá realizar uma nova submissão do exercício.
+O usuário apenas poderá consultar uma dica caso o exercício enviado para validação não estaja correto e ele escolha a opção de disponibilização de dicas, assim ele terá direito a três dicas selecionadas aleatoriamente pelo mecanismo. O usuário irá escolher consultar uma das três dicas e após a consulta ele poderá realizar uma nova submissão do exercício.
 
 \subsection{Cadastro de Dica}
 
-O cadastro de uma dica pode ser realizado quando o usuário submete um exercício para validação e obtêm exito, assim o sistema apresentará uma \foreign{view} perguntando se o usuário deseja contribuir com uma dica, caso aceite, o sistema irá redirecionar o usuário para a tela onde será realizado o cadastro da dica, onde ele irá descrever em um campo a dica que deseja compartilhar. Também será apresentada uma dica que outro usuário realizou para o mesmo exercício com a finalidade de melhora-lá, assim o usuário poderá cadastrar ou não essa dica.
+O cadastro de uma dica pode ser realizado quando o usuário submete um exercício para validação e obtêm exito, assim o sistema apresentará uma tela perguntando se o usuário deseja contribuir com uma dica, caso aceite, o sistema irá redirecionar o usuário para a tela onde será realizado o cadastro da dica, onde ele irá descrever em um campo a dica que deseja compartilhar. Também será apresentada a solução do mesmo exercício de outro usuário para que seja escrito uma dica. 
 
 \subsection{Cadastro do Diário}
+
+No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, para ocorrer essa atividade o usuário irá precisar acionar a opção de preenchimento do diário.  
 
 Após o usuário ter realizado um exercício e obter sucesso, o sistema perguntará se o usuário deseja realizar a escrita de um diáro para o respectivo exercício, caso aceite, o sistema redirecionará o usuário para a página do diário onde o usuário informará os dados referentes as submissões dos exercícios.
 
