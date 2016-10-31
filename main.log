@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  29 OCT 2016 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  31 OCT 2016 20:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1337,21 +1337,21 @@ Package cleveref Info: loaded `english' language definitions on input line 13.
 
 
 
-]) [7] [8]
+]) [7]
 \openout2 = `referencial-teorico.aux'.
 
  (./referencial-teorico.tex
 Cap\'{\i }tulo 2.
-[9
+[8
 
 
 
-] [10]) [11]
+] [9]) [10]
 \openout2 = `proposta.aux'.
 
  (./proposta.tex
 Cap\'{\i }tulo 3.
-<visaogeraldometodoproposto.png, id=57, 695.59875pt x 83.31125pt>
+<visaogeraldometodoproposto.png, id=53, 695.59875pt x 83.31125pt>
 File: visaogeraldometodoproposto.png Graphic file (type png)
 
 <use visaogeraldometodoproposto.png>
@@ -1359,27 +1359,27 @@ Package pdftex.def Info: visaogeraldometodoproposto.png used on input line 7.
 (pdftex.def)             Requested size: 469.47049pt x 56.22757pt.
 Package cleveref Info: loaded `english' language definitions on input line 12.
 
-<sistemadicas.png, id=59, 474.77374pt x 474.77374pt>
+<sistemadicas.png, id=55, 474.77374pt x 474.77374pt>
 File: sistemadicas.png Graphic file (type png)
  <use sistemadicas.png>
-Package pdftex.def Info: sistemadicas.png used on input line 22.
+Package pdftex.def Info: sistemadicas.png used on input line 24.
 (pdftex.def)             Requested size: 469.47049pt x 469.49136pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12
+[11
 
 
 
  <./visaogeraldometodoproposto.png>]
-Package cleveref Info: loaded `english' language definitions on input line 33.
- [13 <./sistemadicas.png>]
-Package cleveref Info: loaded `english' language definitions on input line 48.
- [14]
-Package cleveref Info: loaded `english' language definitions on input line 66.
-)
-[15] [16] (./main.bbl
+Package cleveref Info: loaded `english' language definitions on input line 35.
+ [12 <./sistemadicas.png>]
+Package cleveref Info: loaded `english' language definitions on input line 50.
+ [13]
+Package cleveref Info: loaded `english' language definitions on input line 69.
+ [14])
+[15] (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1388,10 +1388,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [17
+ [16
 
 
-]) [18]
+]) [17]
 
 AED: lastpage setting LastPage
 (./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux)) )
@@ -1400,13 +1400,13 @@ AED: lastpage setting LastPage
 ### semi simple group (level 1) entered at line 91 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15245 strings out of 493029
- 243495 string characters out of 6136234
+ 15251 strings out of 493029
+ 243561 string characters out of 6136234
  415671 words of memory out of 5000000
  18192 multiletter control sequences out of 15000+600000
- 77336 words of font info for 106 fonts, out of 8000000 for 9000
+ 77647 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,94p,1437b,9721s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,94p,1437b,9716s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texm
 f/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/
@@ -1415,10 +1415,10 @@ type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
 public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (20 pages, 309989 bytes).
+Output written on main.pdf (19 pages, 310888 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  22559 words of extra memory for PDF output out of 24883 (max. 10000000)
 

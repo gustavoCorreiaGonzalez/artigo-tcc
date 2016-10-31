@@ -17,6 +17,8 @@ Para avaliar o impacto do uso do mecanismo de dicas personalizadas no ensino de 
 
 Essa seção, descreve o sistema de dicas a ser desenvolvido. O processo de realização de exercícios, que é onde o sistema deve atuar, pode ser dividi do em quatro fases: cadastro do usuário, realização de exercícios, utilização de dicas (providas por usuários do sistema) e validação do exercício. A descrição apresentada será usada para a modelagem do sistema.
 
+utilizar o asth pq esse ta uma merda!!!
+
 \begin{figure}[h]
 	\captionsetup{justification=centering}
 	\includegraphics[width=\linewidth]{sistemadicas.png}
@@ -30,22 +32,23 @@ Quando um usuário desejar realizar o cadastro no nosso sistema, ele poderá esc
 
 \subsection{Cadastro de Exercícios}
 
-Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o usuário terá que cadastrar um enunciado, qual linguagem é para ser utilizada na resolução, o nivel (fácil, médio ou difícil), o tipo do exercício (condicional, laço de repetição, função, etc), a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. O professor poderá opinar por adicionar o exercício cadastrado em uma lista de exercícios. 
+Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o professor terá que cadastrar um enunciado, qual linguagem é para ser utilizada na resolução, o nivel (fácil, médio ou difícil), o tipo do exercício (condicional, laço de repetição, função, etc), a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. Cada exercício cadastrado será agregado a uma lista de exercícios que o professor irá criar antes de cadastrar os exercícios.
+
 
 % TODO: Colocar formato de exemplo de uma resposta
+
 \subsection{Cadastro de Turma}
 
 O professor poderá realizar o cadastro de uma classe para adicionar seus alunos e passar as listas de exercícios e acompanhar o rendimento de cada aluno. Para cadastrar uma turma é necessário um nome da turma e um professor, com isso o professor poderá adicionar os alunos desejados.
 
-
-% TODO: Olhei até aqui
-
-
 \subsection{Realização de Exercícios}
 
-Após a conclusão do cadastro de usuário, o aluno ou professor é encaminhado para a tela principal do sistema onde poderá realizar as atividades permitidas para cada tipo de usuário. Caso a opção seja realizar um exercício, o usuário poderá escolher qual tipo e nível de dificuldade do exercício deseja realizar, após preencher esses dados o sistema retornará uma lista com alguns exercícios que satisfazem os campos de busca. O usuário irá escolher um exercício, realiza-lo na linguagem de programação que deseja e submeter para a validação do sistema. 
+Após a conclusão do cadastro de usuário, o aluno ou professor terão acesso as funcionalidades especificas de cada tipo de usuário. Dessa forma, o usuário poderá resolver uma lista de exercícios de duas formas: estando vinculado a uma turma ou individualmente. Caso o usuário esteja vinculado a uma turma, a lista de exercícios que ele poderá resolver será a que o professor responsável pela turma criou. Caso o usuário não faça parte de uma turma, ele terá que pesquisar por uma lista de exercícios informando qual assunto, estrutura de condição ou laço de repetição, ele deseja realizar. 
 
-O exercício poderá estar correto ou não. Se estiver correto o sistema irá apresentar uma mensagem de parabenização e irá redirecionar o usuário para página de busca de exercícios, caso seja rejeitado o sistema retornará qual tipo de erro ocorreu na compilação do exercício, o usuário poderá realizar submissões até que consiga obter sucesso na submissão ou requisitar uma dica para o sistema. Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo o usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício.
+Depois que o usuário encontrar uma lista de exercícios, o sistema apresentaŕa os exercícios à serem resolvidos na ordem em que foram adicionados na lista. Assim o usuário poderá trabalhar em sua solução e submeter ao sistema para correção utilizando a linguagem de programação escolhida pelo professor na criação da lista de exercícios, essa resolução poderá estar correta ou não. Se estiver correta, o sistema apresentará uma mensagem de parabenização e redirecionará o usuário para o próximo exercício. Caso a resolução estiver errada o sistema retornará qual o erro ocorrido na compilação, assim o usuário poderá realizar outras submissões até que consiga obter sucesso na resolução ou requisitar uma dica para o sistema para auxiliá-lo na contrução da resposta. 
+
+Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício, (ver a onde foi marcado no papel).
+
 
 \subsubsection{Utilização das Dicas}
 
@@ -57,18 +60,34 @@ O cadastro de uma dica pode ser realizado quando o usuário submete um exercíci
 
 \subsection{Cadastro do Diário}
 
-No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, para ocorrer essa atividade o usuário irá precisar acionar a opção de preenchimento do diário.  
+No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, essa funcionalidade será apresentada aos usuário caso o professor deseja receber o preenchimento do diário dos exercícios da lista. 
 
-Após o usuário ter realizado um exercício e obter sucesso, o sistema perguntará se o usuário deseja realizar a escrita de um diáro para o respectivo exercício, caso aceite, o sistema redirecionará o usuário para a página do diário onde o usuário informará os dados referentes as submissões dos exercícios.
+Caso o professor pretende receber os diários dos exercícios da lista de sua turma, o usuário após cada submissão da resolução no sistema produzirá um diário que será informado os dados referentes a experiência de realizar o exercício. 
 
 \subsection{Boca}
 
 Para realizar a compilação dos exercícios no sistema de dicas, será utilizado funções do \foreign{software} BOCA que é escrito predominantemente em PHP, o que permitiria sua execução em qualquer plataforma compatível com tal linguagem. No entanto, o sistema de julgamento depende de scripts Bash e de funcionalidades específicas do sistema operacional Linux (isolamento de recursos/jail). 
 
-\section{Banco de Exercícios}
+\section{Formato do Estudo}
 
-O banco de dados de exercícios será criado a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de previnir que o voluntário do estudo de validação do sistema já tenha realizado o exercício. Os exercícios seram divididos em três grupos, o primeiro abordará conceitos básicos da linguagem de programação como entrada e saída de dados, declaração de varíavies e constantes, operações e funções matemáticas. O segundo grupo refere-se a estruturas condicionais e o terceiro grupo trata de estruturas de repetição.
+Esta seção apresentará o formato do estudo, descrevendo como serão realizados o teste do sistema, a criação do banco de exercícios e dicas, como serão respondidas as questões de pesquisa
 
-\section{Banco de Dicas}
+
+colocar figura com o workflow do trabalho
+ex: 3 grupos -> realizam cadastro -> realizam exercício -> etc
+
+\subsection{Teste do sistema}
+
+- descrever como será realizado o teste do sistema
+
+\subsection{Banco de Exercícios}
+
+O banco de dados de exercícios será criado a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de previnir que o voluntário do estudo de validação do sistema já tenha realizado o exercício. Os exercícios serão divididos em três grupos, o primeiro abordará conceitos básicos da linguagem de programação como entrada e saída de dados, declaração de varíavies e constantes, operações e funções matemáticas. O segundo grupo refere-se a estruturas condicionais e o terceiro grupo trata de estruturas de repetição.
+
+\subsection{Banco de Dicas}
 
 O banco de dicas será provido após a conclusão do banco de exercícios, assim realizaremos uma convocação por formulário \textit{online} aos estudantes da Universidade Tecnológica Federal do Paraná do curso de Bacharelado em Ciência da Computação para se voluntariarem a utilizar o sistema de dicas por um determinado período em um dia que será estipulado no formulário. Os voluntários utilizaram o sistema de dicas em um ambiente controlado sendo esse um laboratório da Universidade Tecnológica Federal do Paraná com um professor ou alunos monitorando as atividades e tirando as possíveis dúvidas dos participantes. Cada participante terá que realizar todos os exercícios cadastrados na base de dados e cadastrar dicas para cada um.
+
+- colocar o workflow de como será realizado o estudo
+
+- pensar em colocar uma seção das qustoes de pesquisa
