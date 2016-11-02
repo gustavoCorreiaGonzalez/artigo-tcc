@@ -70,7 +70,7 @@ Para realizar a compilação dos exercícios no sistema de dicas, será utilizad
 
 \section{Formato do Estudo}
 
-Esta seção apresentará o formato do estudo, descrevendo como serão realizados o teste do sistema, a criação do banco de exercícios e dicas, como serão respondidas as questões de pesquisa
+Esta seção apresentará o formato do estudo, descrevendo como serão realizados o teste do sistema, a criação do banco de exercícios e banco de dicas e como serão respondidas as questões de pesquisa.
 
 
 colocar figura com o workflow do trabalho
@@ -78,16 +78,40 @@ ex: 3 grupos -> realizam cadastro -> realizam exercício -> etc
 
 \subsection{Teste do sistema}
 
-- descrever como será realizado o teste do sistema
+Após o desenvolvimento do sistema ser concluído. Antes de realizar os estudos, será necessário executar uma etapa de teste para encontrar possíveis erros no sistema. Para que essa etapa aconteça, será convocado um grupo de alunos de forma voluntária para utilizarem as funcionalidades do sistema e reportar se existe algum erro no sistema. Os alunos deverão reportar os erros encontrados através de criação de \foreign{issues} no \foreign{GitHub} onde está o repositório do sistema. Todos os erros serão corrigidos antes de realizar os estudos para avaliar o sistema.
 
 \subsection{Banco de Exercícios}
 
-O banco de dados de exercícios será criado a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de previnir que o voluntário do estudo de validação do sistema já tenha realizado o exercício. Os exercícios serão divididos em três grupos, o primeiro abordará conceitos básicos da linguagem de programação como entrada e saída de dados, declaração de varíavies e constantes, operações e funções matemáticas. O segundo grupo refere-se a estruturas condicionais e o terceiro grupo trata de estruturas de repetição.
+O banco de dados de exercícios será criado a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de previnir que o voluntário do estudo de avaliação do sistema já tenha realizado o exercício. Os exercícios serão divididos em três grupos, o primeiro abordará conceitos básicos da linguagem de programação como entrada e saída de dados, declaração de varíavies e constantes, operações e funções matemáticas. O segundo grupo refere-se a estruturas condicionais e o terceiro grupo trata de estruturas de repetição.
 
 \subsection{Banco de Dicas}
 
-O banco de dicas será provido após a conclusão do banco de exercícios, assim realizaremos uma convocação por formulário \textit{online} aos estudantes da Universidade Tecnológica Federal do Paraná do curso de Bacharelado em Ciência da Computação para se voluntariarem a utilizar o sistema de dicas por um determinado período em um dia que será estipulado no formulário. Os voluntários utilizaram o sistema de dicas em um ambiente controlado sendo esse um laboratório da Universidade Tecnológica Federal do Paraná com um professor ou alunos monitorando as atividades e tirando as possíveis dúvidas dos participantes. Cada participante terá que realizar todos os exercícios cadastrados na base de dados e cadastrar dicas para cada um.
+\begin{figure}[ht]
+	\captionsetup{justification=centering}
+	\includegraphics[width=\linewidth]{fluxo.png}
+	\caption{Fluxo para criação de dicas.}
+	\label{figura:dicafluxo}
+\end{figure}
 
-- colocar o workflow de como será realizado o estudo
 
-- pensar em colocar uma seção das qustoes de pesquisa
+O banco de dicas será provido após a conclusão do banco de exercícios, assim será realizada uma convocação por formulário \textit{online} aos estudantes da Universidade Tecnológica Federal do Paraná do curso de Bacharelado em Ciência da Computação para se voluntariarem a utilizar o sistema de dicas por um determinado período em um dia que será estipulado no formulário. Os voluntários utilizaram o sistema de dicas em um ambiente controlado sendo esse um laboratório da Universidade Tecnológica Federal do Paraná com um professor ou alunos monitorando as atividades e tirando as possíveis dúvidas dos participantes. 
+
+A criação das dicas conforme a Figura \ref{figura:dicafluxo} irá respeitar dois fluxos de execução, sendo eles: fluxo de reflexão e fluxo de comparação. Os dois fluxos são iniciados quando o usuário recebe uma lista de exercícios para ser realizada. Após o usuário ter uma lista de exercícios o fluxo de reflexão começa, o sistema irá apresentar um exercício da lista para ser resolvido e o usuário poderá começar a realizar a solução. Após a solução ser concluída, o usuário submete a solução para validação, o sistema irá executar a solução do exercício e verificar se está correta ou não. Caso a solução não estiver correta, o sistema redireciona para a etapa de realização de solução, nessa etapa o usuário poderá pedir uma dica para o sistema. Caso a solução estiver correta, o sistema irá redirecionar o usuário para a tela aonde ele criará a dica para o exercício e irá realizar o cadastro dela no banco de dicas.
+
+Após o usuário gerar uma dica do exercício realizado, o sistema irá seguir o fluxo de comparação. Deste modo, o sistema irá procurar no banco de dados soluções de outros usuários do exercício realizado. O sistema irá apresentar ao usuário a pior e a melhor solução do exercício para que ele crie uma dica para melhorar as duas soluções. As dicas de otmização serão cadastradas no banco de dados de dicas para auxiliar outros usuários na resolução do exercício.
+
+
+%Nós apresentamos dois fluxos de trabalho para learnersourcing dicas que atribuem tarefas de geração de dica para os alunos com base no que problemas o aluno tem resolvido recentemente. No fluxo de trabalho auto-reflexão, os alunos gerar sugestões, refletindo sobre um obstáculo que eles próprios tenham superado recentemente. 
+
+%No fluxo de trabalho de comparação, os alunos comparar as suas próprias soluções para os de outros estudantes, gerando uma dica como um subproduto de explicar como se pode obter a partir de uma solução para o outro. 
+
+%O segundo fluxo de trabalho pode operar sobre a saída do primeiro, conforme mostrado na Figura 1. Em ambos os fluxos de trabalho, o aspecto chave é que, através da sua própria experiência lutando com um problema particular, os alunos podem se tornar especialistas sobre as otimizações específicas que implementam e bugs eles resolvem. Os fluxos de trabalho podem tirar a pressão de docentes, dando aos alunos as experiências educacionais valiosos de reflexão e de geração de explicações.
+
+\subsection{Estudo}
+
+\begin{figure}[ht]
+	\captionsetup{justification=centering}
+	\includegraphics[width=\linewidth]{estudo.png}
+	\caption{Visão geral da aplicação do estudo.}
+	\label{figura:dicafluxo}
+\end{figure}
