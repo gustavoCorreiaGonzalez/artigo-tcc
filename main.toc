@@ -12,12 +12,12 @@
 \contentsline {subsubsection}{\numberline {3.1.4.1}Utiliza\IeC {\c c}\IeC {\~a}o das Dicas}{15}
 \contentsline {subsection}{\numberline {3.1.5}Cadastro de Dica}{15}
 \contentsline {subsection}{\numberline {3.1.6}Cadastro do Di\IeC {\'a}rio}{15}
-\contentsline {subsection}{\numberline {3.1.7}Boca}{15}
+\contentsline {subsection}{\numberline {3.1.7}Boca (BOCA Online Contest Administrator)}{15}
 \contentsline {section}{\numberline {3.2}Formato do Estudo}{16}
 \contentsline {subsection}{\numberline {3.2.1}Teste do sistema}{16}
 \contentsline {subsection}{\numberline {3.2.2}Banco de Exerc\IeC {\'\i }cios}{16}
 \contentsline {subsection}{\numberline {3.2.3}Banco de Dicas}{16}
 \contentsline {subsection}{\numberline {3.2.4}Avalia\IeC {\c c}\IeC {\~a}o do Sistema de Dicas}{17}
 \contentsline {chapter}{\numberline {4}Resultados Preliminares}{22}
-\contentsline {chapter}{\numberline {5}Cronograma}{23}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{24}
+\contentsline {chapter}{\numberline {5}Cronograma}{25}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{26}

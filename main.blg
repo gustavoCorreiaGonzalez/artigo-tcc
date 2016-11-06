@@ -4,6 +4,8 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: referencial-teorico.aux
 A level-1 auxiliary file: proposta.aux
+A level-1 auxiliary file: resultados-preliminares.aux
+A level-1 auxiliary file: cronograma.aux
 The style file: abnt-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -21,6 +23,8 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 You can't pop an empty literal stack for entry bosse2015reprovaccoes
+while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry de2004boca
 while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry Cukierman:2015:PSU:2729094.2742623
 while executing---line 2180 of file abnt-alf.bst
@@ -44,45 +48,45 @@ while executing---line 2180 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 17 entries,
+You've used 18 entries,
             6523 wiz_defined-function locations,
-            1251 strings with 12242 characters,
-and the built_in function-call counts, 11816 in all, are:
-= -- 1069
-> -- 310
+            1258 strings with 12556 characters,
+and the built_in function-call counts, 12581 in all, are:
+= -- 1128
+> -- 342
 < -- 14
-+ -- 171
-- -- 95
-* -- 783
-:= -- 1462
-add.period$ -- 59
-call.type$ -- 20
-change.case$ -- 131
-chr.to.int$ -- 25
-cite$ -- 9
-duplicate$ -- 469
-empty$ -- 1118
-format.name$ -- 459
-if$ -- 3011
++ -- 183
+- -- 105
+* -- 840
+:= -- 1564
+add.period$ -- 63
+call.type$ -- 21
+change.case$ -- 142
+chr.to.int$ -- 26
+cite$ -- 10
+duplicate$ -- 502
+empty$ -- 1182
+format.name$ -- 506
+if$ -- 3197
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 248
-newline$ -- 51
-num.names$ -- 45
-pop$ -- 232
+missing$ -- 264
+newline$ -- 55
+num.names$ -- 50
+pop$ -- 253
 preamble$ -- 1
-purify$ -- 61
+purify$ -- 65
 quote$ -- 0
-skip$ -- 947
+skip$ -- 991
 stack$ -- 1
-substring$ -- 493
-swap$ -- 249
+substring$ -- 510
+swap$ -- 261
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 9
 warning$ -- 0
-while$ -- 80
+while$ -- 86
 width$ -- 0
-write$ -- 175
-(There were 9 error messages)
+write$ -- 190
+(There were 10 error messages)
