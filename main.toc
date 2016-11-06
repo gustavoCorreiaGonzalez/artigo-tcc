@@ -19,4 +19,5 @@
 \contentsline {subsection}{\numberline {3.2.3}Banco de Dicas}{16}
 \contentsline {subsection}{\numberline {3.2.4}Avalia\IeC {\c c}\IeC {\~a}o do Sistema de Dicas}{17}
 \contentsline {chapter}{\numberline {4}Resultados Preliminares}{22}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{23}
+\contentsline {chapter}{\numberline {5}Cronograma}{23}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{24}

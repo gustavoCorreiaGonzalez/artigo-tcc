@@ -32,7 +32,7 @@ Quando um usuário desejar realizar o cadastro no nosso sistema, ele poderá esc
 
 \subsection{Cadastro de Exercícios}
 
-Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o professor terá que cadastrar um enunciado, qual linguagem é para ser utilizada na resolução, o nivel (fácil, médio ou difícil), o tipo do exercício (condicional, laço de repetição, função, etc), a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. Cada exercício cadastrado será agregado a uma lista de exercícios que o professor irá criar antes de cadastrar os exercícios.
+Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o professor terá que cadastrar um enunciado, qual linguagem é para ser utilizada na resolução, o nível (fácil, médio ou difícil), o tipo do exercício (condicional ou laço de repetição), a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. Cada exercício cadastrado será agregado a uma lista de exercícios que o professor irá criar antes de cadastrar os exercícios.
 
 
 % TODO: Colocar formato de exemplo de uma resposta
@@ -45,22 +45,22 @@ O professor poderá realizar o cadastro de uma classe para adicionar seus alunos
 
 Após a conclusão do cadastro de usuário, o aluno ou professor terão acesso as funcionalidades especificas de cada tipo de usuário. Dessa forma, o usuário poderá resolver uma lista de exercícios de duas formas: estando vinculado a uma turma ou individualmente. Caso o usuário esteja vinculado a uma turma, a lista de exercícios que ele poderá resolver será a que o professor responsável pela turma criou. Caso o usuário não faça parte de uma turma, ele terá que pesquisar por uma lista de exercícios informando qual assunto, estrutura de condição ou laço de repetição, ele deseja realizar. 
 
-Depois que o usuário encontrar uma lista de exercícios, o sistema apresentaŕa os exercícios à serem resolvidos na ordem em que foram adicionados na lista. Assim o usuário poderá trabalhar em sua solução e submeter ao sistema para correção utilizando a linguagem de programação escolhida pelo professor na criação da lista de exercícios, essa resolução poderá estar correta ou não. Se estiver correta, o sistema apresentará uma mensagem de parabenização e redirecionará o usuário para o próximo exercício. Caso a resolução estiver errada o sistema retornará qual o erro ocorrido na compilação, assim o usuário poderá realizar outras submissões até que consiga obter sucesso na resolução ou requisitar uma dica para o sistema para auxiliá-lo na contrução da resposta. 
+Depois que o usuário encontrar uma lista de exercícios, o sistema apresentará os exercícios à serem resolvidos na ordem em que foram adicionados na lista. Assim o usuário poderá trabalhar em sua solução e submeter ao sistema para correção utilizando a linguagem de programação escolhida pelo professor na criação da lista de exercícios, essa resolução poderá estar correta ou não. Se estiver correta, o sistema apresentará uma mensagem de parabenização e redirecionará o usuário para o próximo exercício. Caso a resolução estiver errada o sistema retornará qual o erro ocorrido na compilação, assim o usuário poderá realizar outras submissões até que consiga obter sucesso na resolução ou requisitar uma dica para o sistema para auxiliá-lo na construção da resposta. 
 
 Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício, (ver a onde foi marcado no papel).
 
 
 \subsubsection{Utilização das Dicas}
 
-O usuário apenas poderá consultar uma dica caso o exercício enviado para validação não estaja correto e ele escolha a opção de disponibilização de dicas, assim ele terá direito a três dicas selecionadas aleatoriamente pelo mecanismo. O usuário irá escolher consultar uma das três dicas e após a consulta ele poderá realizar uma nova submissão do exercício.
+O usuário apenas poderá consultar uma dica caso o exercício enviado para validação não esteja correto e ele escolha a opção de disponibilização de dicas, assim ele terá direito a três dicas selecionadas aleatoriamente pelo mecanismo. O usuário irá escolher consultar uma das três dicas e após a consulta ele poderá realizar uma nova submissão do exercício.
 
 \subsection{Cadastro de Dica}
 
-O cadastro de uma dica pode ser realizado quando o usuário submete um exercício para validação e obtêm exito, assim o sistema apresentará uma tela perguntando se o usuário deseja contribuir com uma dica, caso aceite, o sistema irá redirecionar o usuário para a tela onde será realizado o cadastro da dica, onde ele irá descrever em um campo a dica que deseja compartilhar. Também será apresentada a solução do mesmo exercício de outro usuário para que seja escrito uma dica. 
+O cadastro de uma dica pode ser realizado quando o usuário submete um exercício para validação e obtêm êxito, assim o sistema apresentará uma tela perguntando se o usuário deseja contribuir com uma dica, caso aceite, o sistema irá redirecionar o usuário para a tela onde será realizado o cadastro da dica, onde ele irá descrever em um campo a dica que deseja compartilhar. Também será apresentada a solução do mesmo exercício de outro usuário para que seja escrito uma dica. 
 
 \subsection{Cadastro do Diário}
 
-No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, essa funcionalidade será apresentada aos usuário caso o professor deseja receber o preenchimento do diário dos exercícios da lista. 
+No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, essa funcionalidade será apresentada aos usuários caso o professor deseja receber o preenchimento do diário dos exercícios da lista. 
 
 Caso o professor pretende receber os diários dos exercícios da lista de sua turma, o usuário após cada submissão da resolução no sistema produzirá um diário que será informado os dados referentes a experiência de realizar o exercício. 
 
@@ -82,7 +82,7 @@ Após o desenvolvimento do sistema ser concluído. Antes de realizar os estudos,
 
 \subsection{Banco de Exercícios}
 
-O banco de dados de exercícios será criado a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de previnir que o voluntário do estudo de avaliação do sistema já tenha realizado o exercício. Os exercícios serão divididos em três grupos, o primeiro abordará conceitos básicos da linguagem de programação como entrada e saída de dados, declaração de varíavies e constantes, operações e funções matemáticas. O segundo grupo refere-se a estruturas condicionais e o terceiro grupo trata de estruturas de repetição.
+O banco de dados de exercícios será criado a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de prevenir que o voluntário do estudo de avaliação do sistema já tenha realizado o exercício. Os exercícios serão divididos em três grupos, o primeiro abordará conceitos básicos da linguagem de programação como entrada e saída de dados, declaração de variáveis e constantes, operações e funções matemáticas. O segundo grupo refere-se a estruturas condicionais e o terceiro grupo trata de estruturas de repetição.
 
 \subsection{Banco de Dicas}
 
@@ -98,7 +98,7 @@ O banco de dicas será provido após a conclusão do banco de exercícios, assim
 
 A criação das dicas conforme a Figura \ref{figura:dicafluxo} irá respeitar dois fluxos de execução, sendo eles: fluxo de reflexão e fluxo de comparação. Os dois fluxos são iniciados quando o usuário recebe uma lista de exercícios para ser realizada. Após o usuário ter uma lista de exercícios o fluxo de reflexão começa, o sistema irá apresentar um exercício da lista para ser resolvido e o usuário poderá começar a realizar a solução. Após a solução ser concluída, o usuário submete a solução para validação, o sistema irá executar a solução do exercício e verificar se está correta ou não. Caso a solução não estiver correta, o sistema redireciona para a etapa de realização de solução, nessa etapa o usuário poderá pedir uma dica para o sistema. Caso a solução estiver correta, o sistema irá redirecionar o usuário para a tela aonde ele criará a dica para o exercício e irá realizar o cadastro dela no banco de dicas.
 
-Após o usuário gerar uma dica do exercício realizado, o sistema irá seguir o fluxo de comparação. Deste modo, o sistema irá procurar no banco de dados soluções de outros usuários do exercício realizado. O sistema irá apresentar ao usuário a pior e a melhor solução do exercício para que ele crie uma dica para melhorar as duas soluções. As dicas de otmização serão cadastradas no banco de dados de dicas para auxiliar outros usuários na resolução do exercício.
+Após o usuário gerar uma dica do exercício realizado, o sistema irá seguir o fluxo de comparação. Deste modo, o sistema irá procurar no banco de dados soluções de outros usuários do exercício realizado. O sistema irá apresentar ao usuário a pior e a melhor solução do exercício para que ele crie uma dica para melhorar as duas soluções. As dicas de otimização serão cadastradas no banco de dados de dicas para auxiliar outros usuários na resolução do exercício.
 
 
 %Nós apresentamos dois fluxos de trabalho para learnersourcing dicas que atribuem tarefas de geração de dica para os alunos com base no que problemas o aluno tem resolvido recentemente. No fluxo de trabalho auto-reflexão, os alunos gerar sugestões, refletindo sobre um obstáculo que eles próprios tenham superado recentemente. 
@@ -116,7 +116,7 @@ Após o usuário gerar uma dica do exercício realizado, o sistema irá seguir o
 	\label{figura:estudo}
 \end{figure}
 
-Nesta subseção será explicado as duas etapas que serão realizadas para responder as duas questões de pesquisa. A primeira etapa consiste em aplicar um estudo controlado na Universidade Tecnológica Federal do Paraná para gerar os dados de \foreign{log} de execução das listas de exercícios necessários. Desto modo, após a geração dos dados de \foreign{log} a segunda etapa será inicializada. A segunda etapa apresenta as analises que serão feitas para responder as duas questões de pesquisa.
+Nesta subseção será explicado as duas etapas que serão realizadas para responder as duas questões de pesquisa. A primeira etapa consiste em aplicar um estudo controlado na Universidade Tecnológica Federal do Paraná para gerar os dados de \foreign{log} de execução das listas de exercícios necessários. Dessa forma, após a geração dos dados de \foreign{log} a segunda etapa será inicializada. A segunda etapa apresenta as análises que serão feitas para responder as duas questões de pesquisa.
 
 \begin{table}[]
 	\centering
@@ -136,7 +136,7 @@ Nesta subseção será explicado as duas etapas que serão realizadas para respo
 	\end{tabular}
 \end{table}
 
-A Figura \ref{figura:estudo} representa a primeira etapa da avaliação do sistema, onde será necessário a colaboração de voluntarios do curso de Bacharelado em Ciência da Computação para o experimento presencial que será realizado na Universidade Tecnológica Federal do Paraná, para isso será criado um formulário no \foreign{Google Forms} representado na Tabela \ref{tabela:formulário} e disponibilizado \foreign{online} para os alunos do curso.
+A Figura \ref{figura:estudo} representa a primeira etapa da avaliação do sistema, onde será necessário a colaboração de voluntários do curso de Bacharelado em Ciência da Computação para o experimento presencial que será realizado na Universidade Tecnológica Federal do Paraná, para isso será criado um formulário no \foreign{Google Forms} representado na Tabela \ref{tabela:formulário} e disponibilizado \foreign{online} para os alunos do curso.
 
 Os voluntários serão divididos em três grupos distintos de acordo com o nível de conhecimento em programação, o nível de cada voluntário será estimado de acordo com o tempo que está na graduação e o semestre que se encontra. Os três grupos irão realizar os mesmos exercícios mas utilizaram funcionalidades diferentes do sistema,  
 
@@ -168,6 +168,6 @@ Toda submissão realizada pelos três grupos de voluntários será gravada no \f
 	\end{tabular}
 \end{table}
 
-A segunda etapa da avaliação do sistema responderá as duas questões de pesquisa, será analiado os dados do \foreign{log} de submissões realizados na primeira etapa. A primeira questão de pesquisa tem como objetivo investigar se o mecanismo de dicas irá ajudar os alunos a obterem melhores resultados na execução de exercícios de programação, essa questão será respondida a partir da avaliação do desempenho dos grupos que utilizaram o sistema com o mecanismo de dicas em relação ao grupo que utilizou o sistema sem o mecanismo,  também será avaliado o questionário respondido pelos voluntários.   
+A segunda etapa da avaliação do sistema responderá as duas questões de pesquisa, será analisado os dados do \foreign{log} de submissões realizados na primeira etapa. A primeira questão de pesquisa tem como objetivo investigar se o mecanismo de dicas irá ajudar os alunos a obterem melhores resultados na execução de exercícios de programação, essa questão será respondida a partir da avaliação do desempenho dos grupos que utilizaram o sistema com o mecanismo de dicas em relação ao grupo que utilizou o sistema sem o mecanismo, também será avaliado o questionário respondido pelos voluntários.   
 
-A segunda questão: Quais dicas personalizadas ajudam mais os alunos? Será respondida com a analise da comparação do desempenho do primeiro grupo de voluntário com o segundo, e verificando se as dicas de voluntários mais experientes possuiram melhor avaliação em relação as dicas dos voluntários menos experientes.
+A segunda questão: Quais dicas personalizadas ajudam mais os alunos? Será respondida com a análise da comparação do desempenho do primeiro grupo de voluntário com o segundo, e verificando se as dicas de voluntários mais experientes possuíram melhor avaliação em relação as dicas dos voluntários menos experientes.
