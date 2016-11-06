@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  2 NOV 2016 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  3 NOV 2016 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1135,14 +1135,8 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 LaTeX Warning: Unused global option(s):
     [12pt,a4paper,oneside].
 
-(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux
-
-LaTeX Warning: Label `figura:dicafluxo' multiply defined.
-
-
-LaTeX Warning: Label `figura:dicafluxo@cref' multiply defined.
-
-))
+(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux)
+(./resultados-preliminares.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -1159,7 +1153,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 83.
@@ -1314,13 +1309,13 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 [4
 
-] (./main.toc)
+] (./main.toc [5
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5
-
-]
+ [6]
 \openout2 = `introducao.aux'.
 
  (./introducao.tex
@@ -1339,25 +1334,25 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Package cleveref Info: loaded `english' language definitions on input line 11.
 Package cleveref Info: loaded `english' language definitions on input line 11.
 Package cleveref Info: loaded `english' language definitions on input line 11.
-[6
+[7
 
 
 
-]) [7]
+]) [8]
 \openout2 = `referencial-teorico.aux'.
 
  (./referencial-teorico.tex
 Cap\'{\i }tulo 2.
-[8
+[9
 
 
 
-] [9]) [10]
+] [10]) [11]
 \openout2 = `proposta.aux'.
 
  (./proposta.tex
 Cap\'{\i }tulo 3.
-<visaogeraldometodoproposto.png, id=53, 695.59875pt x 83.31125pt>
+<visaogeraldometodoproposto.png, id=57, 695.59875pt x 83.31125pt>
 File: visaogeraldometodoproposto.png Graphic file (type png)
 
 <use visaogeraldometodoproposto.png>
@@ -1365,76 +1360,107 @@ Package pdftex.def Info: visaogeraldometodoproposto.png used on input line 7.
 (pdftex.def)             Requested size: 469.47049pt x 56.22757pt.
 Package cleveref Info: loaded `english' language definitions on input line 12.
 
-<estudo.png, id=55, 643.40375pt x 324.21124pt>
-File: estudo.png Graphic file (type png)
- <use estudo.png>
-Package pdftex.def Info: estudo.png used on input line 16.
-(pdftex.def)             Requested size: 469.47049pt x 236.57329pt.
- [11
-
-
-
- <./visaogeraldometodoproposto.png>] <sistemadicas.png, id=63, 474.77374pt x 47
-4.77374pt>
+<sistemadicas.png, id=59, 474.77374pt x 474.77374pt>
 File: sistemadicas.png Graphic file (type png)
-
-<use sistemadicas.png>
-Package pdftex.def Info: sistemadicas.png used on input line 31.
+ <use sistemadicas.png>
+Package pdftex.def Info: sistemadicas.png used on input line 24.
 (pdftex.def)             Requested size: 469.47049pt x 469.49136pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package cleveref Info: loaded `english' language definitions on input line 42.
-[12 <./estudo.png>] [13 <./sistemadicas.png>]
-Package cleveref Info: loaded `english' language definitions on input line 57.
+[12
+
+
+
+ <./visaogeraldometodoproposto.png>]
+Package cleveref Info: loaded `english' language definitions on input line 35.
+ [13 <./sistemadicas.png>]
+Package cleveref Info: loaded `english' language definitions on input line 50.
  [14]
-Package cleveref Info: loaded `english' language definitions on input line 76.
-Package cleveref Info: loaded `english' language definitions on input line 88.
-Package cleveref Info: loaded `english' language definitions on input line 88.
+Package cleveref Info: loaded `english' language definitions on input line 69.
  [15]
-<fluxo.png, id=78, 575.14874pt x 836.12375pt>
+Package cleveref Info: loaded `english' language definitions on input line 81.
+Package cleveref Info: loaded `english' language definitions on input line 81.
+
+<fluxo.png, id=76, 575.14874pt x 836.12375pt>
 File: fluxo.png Graphic file (type png)
  <use fluxo.png>
-Package pdftex.def Info: fluxo.png used on input line 98.
+Package pdftex.def Info: fluxo.png used on input line 91.
 (pdftex.def)             Requested size: 469.47049pt x 682.51291pt.
 
 
-LaTeX Warning: Float too large for page by 11.5562pt on input line 101.
+LaTeX Warning: Float too large for page by 11.5562pt on input line 94.
 
-[16]) [17] [18 <./fluxo.png>] (./main.bbl
+[16] <estudo.png, id=80, 643.40375pt x 324.21124pt>
+File: estudo.png Graphic file (type png)
+ <use estudo.png>
+Package pdftex.def Info: estudo.png used on input line 114.
+(pdftex.def)             Requested size: 469.47049pt x 236.57329pt.
+Package cleveref Info: loaded `english' language definitions on input line 119.
+
+Package cleveref Info: loaded `english' language definitions on input line 119.
+
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `hbt') on input line 121.
+
+Package cleveref Info: loaded `english' language definitions on input line 139.
+
+Package cleveref Info: loaded `english' language definitions on input line 139.
+
+[17]
+Package cleveref Info: loaded `english' language definitions on input line 151.
+
+Package cleveref Info: loaded `english' language definitions on input line 151.
+
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `hbt') on input line 153.
+
+Package cleveref Info: loaded `english' language definitions on input line 171.
+
+) [18] [19] [20 <./fluxo.png>] [21 <./estudo.png>]
+\openout2 = `resultados-preliminares.aux'.
+
+
+(./resultados-preliminares.tex
+Cap\'{\i }tulo 4.
+) [22
+
+
+
+] (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [19
+ [23
 
 
-]) [20]
+]) [24]
 
 AED: lastpage setting LastPage
-(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
+(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux)
+(./resultados-preliminares.aux)) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 91 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15263 strings out of 493029
- 243750 string characters out of 6136234
+ 15283 strings out of 493029
+ 244190 string characters out of 6136234
  415671 words of memory out of 5000000
- 18202 multiletter control sequences out of 15000+600000
- 77814 words of font info for 110 fonts, out of 8000000 for 9000
+ 18211 multiletter control sequences out of 15000+600000
+ 78034 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,94p,1437b,9784s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,94p,1437b,9788s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texm
 f/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/
@@ -1443,10 +1469,10 @@ type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
 public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (22 pages, 369722 bytes).
+Output written on main.pdf (26 pages, 377408 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 146 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  22569 words of extra memory for PDF output out of 24883 (max. 10000000)
 

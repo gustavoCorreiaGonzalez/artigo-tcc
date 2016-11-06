@@ -89,7 +89,7 @@ O banco de dados de exercícios será criado a partir de exercícios selecionado
 \begin{figure}[ht]
 	\captionsetup{justification=centering}
 	\includegraphics[width=\linewidth]{fluxo.png}
-	\caption{Fluxo para criação de dicas.}
+	\caption{Fluxos para criação de dicas.}
 	\label{figura:dicafluxo}
 \end{figure}
 
@@ -107,11 +107,67 @@ Após o usuário gerar uma dica do exercício realizado, o sistema irá seguir o
 
 %O segundo fluxo de trabalho pode operar sobre a saída do primeiro, conforme mostrado na Figura 1. Em ambos os fluxos de trabalho, o aspecto chave é que, através da sua própria experiência lutando com um problema particular, os alunos podem se tornar especialistas sobre as otimizações específicas que implementam e bugs eles resolvem. Os fluxos de trabalho podem tirar a pressão de docentes, dando aos alunos as experiências educacionais valiosos de reflexão e de geração de explicações.
 
-\subsection{Estudo}
+\subsection{Avaliação do Sistema de Dicas}
 
 \begin{figure}[ht]
 	\captionsetup{justification=centering}
 	\includegraphics[width=\linewidth]{estudo.png}
 	\caption{Visão geral da aplicação do estudo.}
-	\label{figura:dicafluxo}
+	\label{figura:estudo}
 \end{figure}
+
+Nesta subseção será explicado as duas etapas que serão realizadas para responder as duas questões de pesquisa. A primeira etapa consiste em aplicar um estudo controlado na Universidade Tecnológica Federal do Paraná para gerar os dados de \foreign{log} de execução das listas de exercícios necessários. Desto modo, após a geração dos dados de \foreign{log} a segunda etapa será inicializada. A segunda etapa apresenta as analises que serão feitas para responder as duas questões de pesquisa.
+
+\begin{table}[]
+	\centering
+	\captionsetup{justification=centering}
+	\caption{Formulário para aquisição de voluntários.}
+	\label{tabela:formulário}
+	\begin{tabular}{l}
+		\hline
+		Perguntas                        \\ \hline
+		Nome?                            \\
+		Idade?                           \\
+		Telefone?                        \\
+		Email?                           \\
+		Curso?                           \\
+		Tempo que está cursando o curso? \\
+		Semestre?                        \\ \hline
+	\end{tabular}
+\end{table}
+
+A Figura \ref{figura:estudo} representa a primeira etapa da avaliação do sistema, onde será necessário a colaboração de voluntarios do curso de Bacharelado em Ciência da Computação para o experimento presencial que será realizado na Universidade Tecnológica Federal do Paraná, para isso será criado um formulário no \foreign{Google Forms} representado na Tabela \ref{tabela:formulário} e disponibilizado \foreign{online} para os alunos do curso.
+
+Os voluntários serão divididos em três grupos distintos de acordo com o nível de conhecimento em programação, o nível de cada voluntário será estimado de acordo com o tempo que está na graduação e o semestre que se encontra. Os três grupos irão realizar os mesmos exercícios mas utilizaram funcionalidades diferentes do sistema,  
+
+\begin{itemize}
+	\item \textbf{Grupo 1}: utilizará o mecanismo de dicas que prove dicas de acordo com o exercício que o aluno está realizando.
+	
+	\item \textbf{Grupo 2}: utilizará o mecanismo de dicas personalizado que disponibiliza dicas de acordo com o exercício e o erro cometido na submissão.
+
+	\item \textbf{Grupo 3}: utilizará o sistema sem o mecanismo de dicas.
+\end{itemize}
+
+Toda submissão realizada pelos três grupos de voluntários será gravada no \foreign{log} de submissões, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício. Após todos os voluntários tiverem finalizados todos os exercícios da lista, o estudo presencial será finalizado com a aplicação de um questionário representado na Tabela \ref{tabela:questionárioestudo} para avaliar a usabilidade do sistema e a experiência da utilização de um sistema \foreign{web} para solucionar exercícios de programação.
+
+\begin{table}[]
+	\centering
+	\captionsetup{justification=centering}
+	\caption{Questionário do estudo presencial.}
+	\label{tabela:questionárioestudo}
+	\begin{tabular}{l}
+		\hline
+		Perguntas                        \\ \hline
+		pergunta1?                            \\
+		pergunta2?                           \\
+		pergunta3?                        \\
+		pergunta4?                           \\
+		pergunta5?                           \\
+		pergunta6? \\
+		pergunta7?                        \\ \hline
+	\end{tabular}
+\end{table}
+
+A segunda etapa da avaliação do sistema responderá as duas questões de pesquisa, será analiado os dados do \foreign{log} de submissões realizados na primeira etapa. A primeira questão de pesquisa tem como objetivo investigar se o mecanismo de dicas irá ajudar os alunos a obterem melhores resultados na execução de exercícios de programação, essa questão será respondida a partir da avaliação do desempenho dos grupos que utilizaram o sistema com o mecanismo de dicas em relação ao grupo que utilizou o sistema sem o mecanismo,  também será avaliado o questionário respondido pelos voluntários.   
+
+A segunda questão: Quais dicas personalizadas ajudam mais os alunos? Será respondida com a analise da comparação do desempenho do primeiro grupo de voluntário com o segundo, e verificando se as dicas de voluntários mais experientes possuiram melhor avaliação em relação as dicas dos voluntários menos experientes.
