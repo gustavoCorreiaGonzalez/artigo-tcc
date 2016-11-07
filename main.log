@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  7 NOV 2016 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  7 NOV 2016 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1381,62 +1381,60 @@ Package cleveref Info: loaded `english' language definitions on input line 31.
  [13 <./sistemadicas.png>]
 Package cleveref Info: loaded `english' language definitions on input line 46.
  [14]
-Package cleveref Info: loaded `english' language definitions on input line 65.
+Package cleveref Info: loaded `english' language definitions on input line 54.
+Package cleveref Info: loaded `english' language definitions on input line 72.
+Package cleveref Info: loaded `english' language definitions on input line 72.
  [15]
-Package cleveref Info: loaded `english' language definitions on input line 73.
-Package cleveref Info: loaded `english' language definitions on input line 73.
-
 <fluxo.png, id=76, 575.14874pt x 836.12375pt>
 File: fluxo.png Graphic file (type png)
  <use fluxo.png>
-Package pdftex.def Info: fluxo.png used on input line 83.
+Package pdftex.def Info: fluxo.png used on input line 82.
 (pdftex.def)             Requested size: 469.47049pt x 682.51291pt.
 
 
-LaTeX Warning: Float too large for page by 11.5562pt on input line 86.
+LaTeX Warning: Float too large for page by 11.5562pt on input line 85.
 
 [16] <estudo.png, id=80, 643.40375pt x 324.21124pt>
 File: estudo.png Graphic file (type png)
  <use estudo.png>
-Package pdftex.def Info: estudo.png used on input line 99.
+Package pdftex.def Info: estudo.png used on input line 98.
 (pdftex.def)             Requested size: 469.47049pt x 236.57329pt.
-Package cleveref Info: loaded `english' language definitions on input line 104.
+Package cleveref Info: loaded `english' language definitions on input line 103.
 
-Package cleveref Info: loaded `english' language definitions on input line 104.
+Package cleveref Info: loaded `english' language definitions on input line 103.
 
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `hbt') on input line 106.
+               Default added (so using `hbt') on input line 105.
 
-Package cleveref Info: loaded `english' language definitions on input line 124.
+Package cleveref Info: loaded `english' language definitions on input line 123.
 
-Package cleveref Info: loaded `english' language definitions on input line 124.
+Package cleveref Info: loaded `english' language definitions on input line 123.
 
 [17]
-Package cleveref Info: loaded `english' language definitions on input line 136.
+Package cleveref Info: loaded `english' language definitions on input line 135.
 
-Package cleveref Info: loaded `english' language definitions on input line 136.
+Package cleveref Info: loaded `english' language definitions on input line 135.
 
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `hbt') on input line 138.
+               Default added (so using `hbt') on input line 137.
 
-Package cleveref Info: loaded `english' language definitions on input line 156.
+Package cleveref Info: loaded `english' language definitions on input line 155.
 
-) [18] [19] [20 <./fluxo.png>] [21 <./estudo.png>]
+) [18] [19 <./fluxo.png>] [20 <./estudo.png>]
 \openout2 = `resultados-preliminares.aux'.
 
-
-(./resultados-preliminares.tex
+ (./resultados-preliminares.tex
 Cap\'{\i }tulo 4.
 Package cleveref Info: loaded `english' language definitions on input line 3.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `hbt') on input line 7.
 
-<imagenssoftware/registrarusuario.png, id=99, 1371.1225pt x 624.3325pt>
+<imagenssoftware/registrarusuario.png, id=96, 1371.1225pt x 624.3325pt>
 File: imagenssoftware/registrarusuario.png Graphic file (type png)
 
 <use imagenssoftware/registrarusuario.png>
@@ -1444,7 +1442,7 @@ Package pdftex.def Info: imagenssoftware/registrarusuario.png used on input lin
 e 9.
 (pdftex.def)             Requested size: 469.47049pt x 213.7659pt.
 
-<imagenssoftware/logar.png, id=100, 1371.1225pt x 624.3325pt>
+<imagenssoftware/logar.png, id=97, 1371.1225pt x 624.3325pt>
 File: imagenssoftware/logar.png Graphic file (type png)
 
 <use imagenssoftware/logar.png>
@@ -1454,7 +1452,7 @@ Package pdftex.def Info: imagenssoftware/logar.png used on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagenssoftware/resetarsenha.png, id=101, 1371.1225pt x 624.3325pt>
+<imagenssoftware/resetarsenha.png, id=98, 1371.1225pt x 624.3325pt>
 File: imagenssoftware/resetarsenha.png Graphic file (type png)
 
 <use imagenssoftware/resetarsenha.png>
@@ -1465,7 +1463,7 @@ Package pdftex.def Info: imagenssoftware/resetarsenha.png used on input line 23
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagenssoftware/cadastroprofessor.png, id=102, 1358.07375pt x 855.195pt>
+<imagenssoftware/cadastroprofessor.png, id=99, 1358.07375pt x 855.195pt>
 File: imagenssoftware/cadastroprofessor.png Graphic file (type png)
 
 <use imagenssoftware/cadastroprofessor.png>
@@ -1476,7 +1474,7 @@ ne 30.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagenssoftware/cadastroaluno.png, id=103, 1358.07375pt x 855.195pt>
+<imagenssoftware/cadastroaluno.png, id=100, 1358.07375pt x 855.195pt>
 File: imagenssoftware/cadastroaluno.png Graphic file (type png)
 
 <use imagenssoftware/cadastroaluno.png>
@@ -1487,12 +1485,12 @@ Package pdftex.def Info: imagenssoftware/cadastroaluno.png used on input line 3
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [22
+) [21
 
 
 
- <./imagenssoftware/registrarusuario.png>] [23 <./imagenssoftware/logar.png> <.
-/imagenssoftware/resetarsenha.png>] [24 <./imagenssoftware/cadastroprofessor.pn
+ <./imagenssoftware/registrarusuario.png>] [22 <./imagenssoftware/logar.png> <.
+/imagenssoftware/resetarsenha.png>] [23 <./imagenssoftware/cadastroprofessor.pn
 g> <./imagenssoftware/cadastroaluno.png>]
 \openout2 = `cronograma.aux'.
 
@@ -1502,7 +1500,7 @@ Cap\'{\i }tulo 5.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `hbt') on input line 5.
 
-) [25
+) [24
 
 
 
@@ -1515,10 +1513,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [26
+ [25
 
 
-]) [27]
+]) [26]
 
 AED: lastpage setting LastPage
 (./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux)
@@ -1528,11 +1526,11 @@ AED: lastpage setting LastPage
 ### semi simple group (level 1) entered at line 91 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15336 strings out of 493029
- 245531 string characters out of 6136234
+ 15334 strings out of 493029
+ 245509 string characters out of 6136234
  415671 words of memory out of 5000000
  18249 multiletter control sequences out of 15000+600000
- 78474 words of font info for 116 fonts, out of 8000000 for 9000
+ 78383 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,9n,94p,1437b,9813s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texm
@@ -1543,10 +1541,10 @@ type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
 public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (29 pages, 483128 bytes).
+Output written on main.pdf (28 pages, 482679 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 162 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  22594 words of extra memory for PDF output out of 24883 (max. 10000000)
 

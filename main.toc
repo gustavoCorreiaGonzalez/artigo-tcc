@@ -11,15 +11,15 @@
 \contentsline {subsection}{\numberline {3.1.2}Cadastro de Exerc\IeC {\'\i }cios}{13}
 \contentsline {subsection}{\numberline {3.1.3}Cadastro de Turma}{14}
 \contentsline {subsection}{\numberline {3.1.4}Realiza\IeC {\c c}\IeC {\~a}o de Exerc\IeC {\'\i }cios}{14}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Utiliza\IeC {\c c}\IeC {\~a}o das Dicas}{15}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Utiliza\IeC {\c c}\IeC {\~a}o das Dicas}{14}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Boca (BOCA Online Contest Administrator)}{15}
 \contentsline {subsection}{\numberline {3.1.5}Cadastro de Dica}{15}
 \contentsline {subsection}{\numberline {3.1.6}Cadastro do Di\IeC {\'a}rio}{15}
-\contentsline {subsection}{\numberline {3.1.7}Boca (BOCA Online Contest Administrator)}{15}
-\contentsline {section}{\numberline {3.2}Formato do Estudo}{16}
+\contentsline {section}{\numberline {3.2}Formato do Estudo}{15}
 \contentsline {subsection}{\numberline {3.2.1}Teste do sistema}{16}
 \contentsline {subsection}{\numberline {3.2.2}Banco de Exerc\IeC {\'\i }cios}{16}
 \contentsline {subsection}{\numberline {3.2.3}Banco de Dicas}{16}
 \contentsline {subsection}{\numberline {3.2.4}Avalia\IeC {\c c}\IeC {\~a}o do Sistema de Dicas}{17}
-\contentsline {chapter}{\numberline {4}Resultados Preliminares}{22}
-\contentsline {chapter}{\numberline {5}Cronograma}{25}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{26}
+\contentsline {chapter}{\numberline {4}Resultados Preliminares}{21}
+\contentsline {chapter}{\numberline {5}Cronograma}{24}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{25}

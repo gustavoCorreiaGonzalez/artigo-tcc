@@ -43,12 +43,15 @@ Após a conclusão do cadastro de usuário, o aluno ou professor terão acesso a
 
 Depois que o usuário encontrar uma lista de exercícios, o sistema apresentará os exercícios à serem resolvidos na ordem em que foram adicionados na lista. Assim o usuário poderá trabalhar em sua solução e submeter ao sistema para correção utilizando a linguagem de programação escolhida pelo professor na criação da lista de exercícios, essa resolução poderá estar correta ou não. Se estiver correta, o sistema apresentará uma mensagem de parabenização e redirecionará o usuário para o próximo exercício. Caso a resolução estiver errada o sistema retornará qual o erro ocorrido na compilação, assim o usuário poderá realizar outras submissões até que consiga obter sucesso na resolução ou requisitar uma dica para o sistema para auxiliá-lo na construção da resposta. 
 
-Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício, (ver a onde foi marcado no papel).
-
+Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício, data e dicas utilizadas.
 
 \subsubsection{Utilização das Dicas}
 
 O usuário apenas poderá consultar uma dica caso o exercício enviado para validação não esteja correto e ele escolha a opção de disponibilização de dicas, assim ele terá direito a três dicas selecionadas aleatoriamente pelo mecanismo. O usuário irá escolher consultar uma das três dicas e após a consulta ele poderá realizar uma nova submissão do exercício.
+
+\subsubsection{Boca (BOCA Online Contest Administrator)}
+
+Para realizar a compilação dos exercícios no sistema de dicas, será utilizado funções do \foreign{software} BOCA \citeonline{de2004boca} que é escrito predominantemente em PHP, o que permitiria sua execução em qualquer plataforma compatível com tal linguagem. O Boca é amplamente utilizado em maratonas de programação em todo o Brasil, são exemplos de maratonas: Maratona de Programação da USP, Maratona de Programação da FACENS, Maratona de Programação da Faculdade de Informática de Presidente Prudente e Copa de programação da PUC-SP. 
 
 \subsection{Cadastro de Dica}
 
@@ -59,10 +62,6 @@ O cadastro de uma dica pode ser realizado quando o usuário submete um exercíci
 No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, essa funcionalidade será apresentada aos usuários caso o professor deseja receber o preenchimento do diário dos exercícios da lista. 
 
 Caso o professor pretende receber os diários dos exercícios da lista de sua turma, o usuário após cada submissão da resolução no sistema produzirá um diário que será informado os dados referentes a experiência de realizar o exercício. 
-
-\subsection{Boca (BOCA Online Contest Administrator)}
-
-Para realizar a compilação dos exercícios no sistema de dicas, será utilizado funções do \foreign{software} BOCA \citeonline{de2004boca} que é escrito predominantemente em PHP, o que permitiria sua execução em qualquer plataforma compatível com tal linguagem. No entanto, o sistema de julgamento depende de scripts Bash e de funcionalidades específicas do sistema operacional Linux (isolamento de recursos/jail). O Boca é amplamente utilizado em maratonas de programação em todo o Brasil, são exemplos de maratonas: Maratona de Programação da USP, Maratona de Programação da FACENS, Maratona de Programação da Faculdade de Informática de Presidente Prudente e Copa de programação da PUC-SP. 
 
 \section{Formato do Estudo}
 
