@@ -2,7 +2,9 @@
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{7}
 \contentsline {chapter}{\numberline {2}Referencial Te\IeC {\'o}rico}{9}
 \contentsline {section}{\numberline {2.1}Reprova\IeC {\c c}\IeC {\~o}es em Disciplinas de Programa\IeC {\c c}\IeC {\~a}o}{9}
-\contentsline {section}{\numberline {2.2}Mecanismo de Dicas}{9}
+\contentsline {section}{\numberline {2.2}Novas T\IeC {\'e}cnicas de Ensino}{10}
+\contentsline {section}{\numberline {2.3}Mecanismo de Dicas}{10}
+\contentsline {section}{\numberline {2.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{11}
 \contentsline {chapter}{\numberline {3}Proposta}{12}
 \contentsline {section}{\numberline {3.1}Implementa\IeC {\c c}\IeC {\~a}o do Mecanismo de Dicas}{12}
 \contentsline {subsection}{\numberline {3.1.1}Cadastro do Usu\IeC {\'a}rio}{12}
