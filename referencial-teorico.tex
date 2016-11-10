@@ -47,9 +47,30 @@ A \cref{tabela:UESbenchmark} apresenta um resumo dos resultados da UES. Das cate
 
 \section{Novas Técnicas de Ensino}
 
-As altas taxas de insucesso em cursos introdutórios de informática teórica são um problema comum em universidades da Alemanha, Europa e América do Norte, uma vez que os alunos têm muitas dificuldades em lidar com o conteúdo desses cursos devido à sua natureza abstrata e teórica. Este artigo descreve modificações na pedagogia de um curso teórico realizado na Universidade de Potsdam, na Alemanha, que são motivados por uma abordagem de aprendizagem cognitiva e têm levado a uma redução significativa das taxas de falha do curso. Uma vez que a nossa abordagem é baseada na infra-estrutura típica para o ensino de cursos introdutórios de informática e não requer despesas adicionais ou recursos especiais, pode ser replicada por outras instituições. Acreditamos que é uma contribuição séria para melhor apoiar o ensino, bem como o sucesso de aprendizagem do aluno neste campo.
+\citeonline{Knobelsdorf:2014:TTC:2538862.2538944} aplicaram uma abordagem cognitiva de aprendizagem no curso teórico realizado na Universidade de Potsdam, na Alemanha, e têm levado a uma redução significativa das taxas de falha do curso. O objetivo era tornar as práticas do curso teórico de Ciência da Computação mais visíveis aos alunos e, portanto, mais fáceis de adotar. Reforçaram a modelagem introduzindo uma sessão tutorial, que consiste em apresentar as habilidades para manusear e trabalhar com o conhecimento que os alunos devem desenvolver no curso. Aplicaram o método \textit{Scaffolding \& Fading}, onde foi oferecido exercícios preparatórios específicos que devem ser resolvidos em conjunto durante a sessão de exercícios e servem como preparação para o dever de casa. E por fim, forneciam \textit{feedback} para as submissões e trabalhos de casa realizados pelos alunos. Para avaliar a nova abordagem, foi realizado um exame final mantendo os mesmos requisitos das versões dos útimos 5 anos e obteram uma taxa de insucesso inferior a 10\% em dois anos consecutivos que antes alcançava de 30 a 60\%.
 
-\citeonline{Knobelsdorf:2014:TTC:2538862.2538944} aplicaram uma abordagem cognitiva de aprendizagem no curso teórico realizado na Universidade de Potsdam, na Alemanha, que são motivados por uma abordagem de aprendizagem cognitiva e têm levado a uma redução significativa das taxas de falha do curso 
+\citeonline{Cukierman:2015:PSU:2729094.2742623} realizou estudos experimentais para determinar se novas atividades em sala de aula, como a instrução entre pares ea aprendizagem ativa, auxiliada pelo uso de sistemas de resposta do público (i-clickers) utilizado em palestras e o Programa de Aperfeiçoamento Acadêmico (AEP), que consiste na intervenção pró-activa centrada nos estudantes desenvolvida e gerida pela \foreign{School of Computing Science and Student Learning Commons} na Universidade \foreign{Simon Fraser}, proporcionando oportunidades de auto-reflexão e exposição a estratégias de estudo melhoram em algumas medidas de resultado (tais como notas de exame final). Para realizar o experimento, foram definicas as seguintes variáveis:
+
+\begin{itemize}
+	\item \textbf{AEP}: Participação em atividades da AEP. Este é um predictor dicotômico que indica se os alunos participaram (codificados como 1) ou não (codificados como 0) nas atividades da AEP.
+	
+	\item \textbf{MID}: pontuações de meio termo. Este é um preditor contínuo, variando de 0 a 100.
+	
+	\item \textbf{WIC}: Participação ponderada do I-clicker. Este é um predictor contínuo que mede a participação do i-clicker que varia de 0 a 100 e calculado acumulando pontos de todas as conferências quando i-clickers foram usados. Nessas palestras, os pontos foram baseados incluindo a participação e resposta correta de perguntas no i-clicker.
+	
+	item \textbf{FIN:}: Pontuações finais do exame. Este é o critério contínuo ou variável de resultado, que varia de 0 a 100.
+\end{itemize}
+
+\begin{figure}[]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[width=.8\linewidth]{referencialteorico/cukierman.png}
+	\caption{Distribuições de FIN, MID e WIC. O gráfico não inclui os alunos que se retiraram do curso, nem com FIN = 0. Fonte \cite{Cukierman:2015:PSU:2729094.2742623}}
+	\label{figura:resultadoCukierman}
+\end{figure}
+
+A \cref{figura:resultadoCukierman} a presenta o resultado obtido na pesquisa, sendo que o estudo não incluiu alunos que se retiraram do curso ou não vieram para o exame final. Intuitivamente, os alunos tiveram um desempenho muito bom no meio termo, com um grande número de alunos com mais de 90\%. Os alunos obtiveram valores muito bons nos pontos ponderados do i-clicker e no exame final pode-se observar que os resultados são mais distribuídos, embora negativamente inclinados.
+
 
 \section{Mecanismo de Dicas}
 
