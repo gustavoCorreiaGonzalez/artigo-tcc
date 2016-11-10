@@ -32,6 +32,8 @@ You can't pop an empty literal stack for entry Cummins:2016:IUH:2876034.2893379
 while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry Elkherj:2014:SSR:2556325.2567864
 while executing---line 2180 of file abnt-alf.bst
+You can't pop an empty literal stack for entry Glassman:2016:LPH:2818048.2820011
+while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry Helminen:2010:JPV:1879211.1879234
 while executing---line 2180 of file abnt-alf.bst
 You can't pop an empty literal stack for entry Holcomb:2016:RCA:2839509.2851062
@@ -48,45 +50,45 @@ while executing---line 2180 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 18 entries,
+You've used 19 entries,
             6523 wiz_defined-function locations,
-            1258 strings with 12556 characters,
-and the built_in function-call counts, 12581 in all, are:
-= -- 1128
-> -- 342
-< -- 14
-+ -- 183
-- -- 105
-* -- 840
-:= -- 1564
-add.period$ -- 63
-call.type$ -- 21
-change.case$ -- 142
-chr.to.int$ -- 26
-cite$ -- 10
-duplicate$ -- 502
-empty$ -- 1182
-format.name$ -- 506
-if$ -- 3197
+            1267 strings with 12904 characters,
+and the built_in function-call counts, 13806 in all, are:
+= -- 1233
+> -- 391
+< -- 15
++ -- 203
+- -- 119
+* -- 939
+:= -- 1716
+add.period$ -- 70
+call.type$ -- 22
+change.case$ -- 158
+chr.to.int$ -- 27
+cite$ -- 11
+duplicate$ -- 557
+empty$ -- 1268
+format.name$ -- 581
+if$ -- 3496
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 264
-newline$ -- 55
-num.names$ -- 50
-pop$ -- 253
+missing$ -- 284
+newline$ -- 60
+num.names$ -- 55
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 70
 quote$ -- 0
-skip$ -- 991
+skip$ -- 1057
 stack$ -- 1
-substring$ -- 510
-swap$ -- 261
-text.length$ -- 10
+substring$ -- 568
+swap$ -- 295
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 9
+type$ -- 10
 warning$ -- 0
-while$ -- 86
+while$ -- 95
 width$ -- 0
-write$ -- 190
-(There were 10 error messages)
+write$ -- 209
+(There were 11 error messages)
