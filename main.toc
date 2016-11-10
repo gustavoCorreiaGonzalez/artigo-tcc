@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2.3}Mecanismo de Dicas}{13}
 \contentsline {section}{\numberline {2.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{14}
 \contentsline {chapter}{\numberline {3}Proposta}{15}
-\contentsline {section}{\numberline {3.1}Implementa\IeC {\c c}\IeC {\~a}o do iHint}{15}
+\contentsline {section}{\numberline {3.1}Implementa\IeC {\c c}\IeC {\~a}o do \foreignlanguage {english}{\textit {iHint}}}{15}
 \contentsline {subsection}{\numberline {3.1.1}Gerenciar Usu\IeC {\'a}rio}{16}
 \contentsline {subsection}{\numberline {3.1.2}Gerenciar Exerc\IeC {\'\i }cio}{}
 \contentsline {subsection}{\numberline {3.1.3}Lista de Exerc\IeC {\'\i }cio}{}
