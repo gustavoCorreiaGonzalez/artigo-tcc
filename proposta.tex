@@ -1,6 +1,6 @@
 \chapter{Proposta}
 
-Este capítulo apresenta o método utilizado para a elaboração deste trabalho. Assim, para avaliar o impacto do uso do mecanismo de dicas personalizadas no ensino de conceitos básicos de programação, primeiramente será realizado a implementação do \foreign{iHint} utilizando o \foreign{framework} de desenvolvimento Laravel\footnote{\url{https://laravel.com/}}. Subsequente, será efetuado um estudo com os dados gerados nos experimentos presenciais para realizar a avaliação do sistema. A \cref{figura:visaometodo} ilustra cada etapa a ser realizada para o desenvolvimento da abordagem proposta.
+Este capítulo apresentará o método utilizado para a elaboração deste trabalho. Assim, para avaliar o impacto do uso do mecanismo de dicas personalizadas no ensino de conceitos básicos de programação, primeiramente será realizado a implementação do \foreign{iHint} utilizando o \foreign{framework} de desenvolvimento Laravel\footnote{\url{https://laravel.com/}}. Subsequente, será efetuado um estudo com os dados gerados nos experimentos presenciais para realizar a avaliação do sistema. A \cref{figura:visaometodo} ilustra cada etapa a ser realizada para o desenvolvimento da abordagem proposta.
 
 \begin{figure}[h]
 	\captionsetup{justification=centering}
@@ -23,7 +23,7 @@ Esta seção, descreve o sistema de dicas a ser desenvolvido. O caso de uso da \
 
 \subsection{Gerenciar Usuário}
 
-Quando um usuário desejar realizar o cadastro no sistema, ele poderá escolher entre a opção de aluno ou professor. O aluno, realiza exercícios disponíveis no banco de dados do sistema, preenche um diário não obrigatório para cada exercício, cria uma dica para cada exercício e consulta seu perfil com seus dados pessoais e um relatório de suas submissões de exercícios. O professor, além de realizar as mesmas atividades do aluno, também poderá criar salas com exercícios pré-definidos convidando alunos para fazer parte dela e submeter exercícios para o sistema. 
+Quando um usuário desejar realizar o cadastro no sistema, ele poderá escolher entre a opção de aluno ou professor. O aluno, realiza exercícios disponíveis no banco de dados do sistema, preenche um diário não obrigatório para cada exercício, cria uma dica para cada exercício e consulta seu perfil com seus dados pessoais e um relatório de suas submissões de exercícios. O professor, além de realizar as mesmas atividades do aluno, também poderá criar turmas com exercícios pré-definidos convidando alunos para fazer parte dela e submeter exercícios para o sistema. 
 
 Primeiramente para o usuário se cadastrar no sistema, a primeira etapa é informar o nome, um e-mail e a senha para o cadastro. O sistema irá verificar se o e-mail do usuário está no formato "exemplo@exemplo.com", verificar se o e-mail já está registrado no banco de dados e realizar a comparação do valor do campo de senha com o do campo confirmar senha. Esta funcionalidade já foi implementada conforme a tela do sistema representada na \cref{figura:registrarusuario}.
 
@@ -52,7 +52,7 @@ Se o usuário estiver realizando o \foreign{login} pela primeira vez, ele terá 
 	\caption{Tela de cadastro de professor.}
 	\label{figura:cadastroprofessor}
 \end{figure}
-
+ O objetivo do capítulo de resultados preliminares é apresentar os avanços que o estudo obteve durante o seu desenvolvimento.
 \begin{figure}[]		
 	\centering
 	\captionsetup{justification=centering}
@@ -63,29 +63,30 @@ Se o usuário estiver realizando o \foreign{login} pela primeira vez, ele terá 
 
 \frontmatter
 
-\subsection{Gerenciar Exercício}
-
-Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o professor terá que cadastrar um enunciado, a linguagem de programação que o aluno deve utilizar para resolver o exercício, o nível (fácil, médio ou difícil), o tipo do exercício (condicional ou laço de repetição), e a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. Cada exercício cadastrado será agregado a uma lista de exercícios que o professor irá criar antes de cadastrar os exercícios.
-
-\subsection{Lista de Exercício}
+\subsection{Gerenciar Lista de Exercício}
 
 O professor poderá realizar o cadastro de uma lista de exercícios informando o nome da lista, os exercícios que deseja adicionar, o tempo máximo que um aluno deve realizar a lista. Os exercícios serão adicionados a partir da consulta no banco de dados de exercícios, para realizar a consulta o professor deverá informar o nível da dificuldade que deseja e o tipo do exercício (condicional ou laço de repetição). Desta forma, o sistema irá retornar uma lista com os exercícios que satisfazem a consulta, assim o professor poderá escolher os exercícios que deseja adicionar na lista.
 
+\subsection{Gerenciar Exercício}
+
+Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o professor terá que cadastrar um enunciado, a linguagem de programação que o aluno deve utilizar para resolver o exercício, o nível (fácil, médio ou difícil), o tipo do exercício (condicional ou laço de repetição), e a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. Cada exercício cadastrado poderá ser agregado a uma lista de exercícios que o professor já tenha cadastrado anteriormente, assim ele poderá criar listas de exercícios personalizadas para cada turma que tenha cadastrado no sistema.
+
+
 \subsection{Gerenciar Turma}
 
-O professor poderá realizar o cadastro de uma classe para adicionar seus alunos e passar as listas de exercícios e acompanhar o rendimento de cada aluno. Para cadastrar uma turma é necessário um nome da turma e um professor, com isso o professor poderá adicionar os alunos desejados ou gerar um código da sua turma através do sistema e disponibilizar para os alunos se cadastrarem.
+O professor poderá realizar o cadastro de uma turma para adicionar seus alunos e passar as listas de exercícios e acompanhar o rendimento de cada aluno. Para cadastrar uma turma é necessário um nome da turma e um professor, com isso o professor poderá adicionar os alunos desejados ou gerar um código da sua turma através do sistema e disponibilizar para os alunos se cadastrarem.
 
 \subsection{Realizar Exercício}
 
-Após a conclusão do cadastro de usuário, o aluno ou professor terão acesso as funcionalidades específicas de cada tipo de usuário. Dessa forma, o usuário poderá resolver uma lista de exercícios estando vinculado a uma turma, assim ele poderá resolver a lista de exercícios que o professor responsável pela turma criou. Caso o usuário não faça parte de uma turma, ele terá que pesquisar por uma lista de exercícios informando qual assunto, estrutura de condição ou laço de repetição, ele deseja realizar. 
+Após a conclusão do cadastro de usuário, o aluno ou professor terão acesso as funcionalidades específicas de cada tipo de usuário. Dessa forma, o usuário poderá resolver uma lista de exercícios estando vinculado a uma turma, assim ele poderá resolver a lista de exercícios que o professor responsável pela turma criou. Caso o usuário não faça parte de uma turma, ele terá que pesquisar por uma lista de exercícios informando qual assunto, estrutura de condição ou laço de repetição, ele deseja realizar.
 
-Depois que o usuário encontrar uma lista de exercícios, o sistema apresentará os exercícios à serem resolvidos na ordem em que foram adicionados na lista. Assim o usuário poderá trabalhar em sua solução e submeter ao sistema para correção utilizando a linguagem de programação escolhida pelo professor na criação da lista de exercícios, essa resolução poderá estar correta ou não. Se estiver correta, o sistema apresentará uma mensagem de parabenização e redirecionará o usuário para o próximo exercício. Caso a resolução estiver errada o sistema retornará qual o erro ocorrido na compilação, assim o usuário poderá realizar outras submissões até que consiga obter sucesso na resolução ou requisitar uma dica para o sistema para auxiliá-lo na construção da resposta. 
+Depois que o usuário encontrar uma lista de exercícios, o sistema apresentará os exercícios à serem resolvidos na ordem em que foram adicionados na lista. Antes de começar a resolução da lista de exercícios, o usuário poderá escolher o modo que deseja utilizar: normal ou desafio. O modo normal de resolução não irá contar o tempo que o professor estimou para resolver a lista. Já o modo desafio irá marcar o tempo que o usuário demora para resolver os exercícios da lista e quando esse tempo estimado pelo professor acabar a resolução da lista será finalizada pelo sistema e o tempo será marcado no banco de dados. Assim, o usuário poderá trabalhar em sua solução e submeter ao sistema para correção utilizando a linguagem de programação escolhida pelo professor na criação da lista de exercícios, essa resolução poderá estar correta ou não. Se estiver correta, o sistema apresentará uma mensagem de parabenização e redirecionará o usuário para o próximo exercício. Caso a resolução estiver errada o sistema retornará qual o erro ocorrido na compilação, assim o usuário poderá realizar outras submissões até que consiga obter sucesso na resolução ou requisitar uma dica para o sistema para auxiliá-lo na construção da resposta. 
 
 Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício, data e dicas utilizadas.
 
 \subsubsection{Utilização das Dicas}
 
-O usuário apenas poderá consultar uma dica caso o exercício enviado para validação não esteja correto e ele escolha a opção de disponibilização de dicas, assim ele terá direito a três dicas selecionadas aleatoriamente pelo mecanismo. O usuário irá escolher consultar uma das três dicas e após a consulta ele poderá realizar uma nova submissão do exercício.
+A utilização das dicas poderá ser requisitada quando o usuário estiver realizando a solução de um exercício, o sistema irá apresentar 5 dicas para que o usuário realize sua consulta. O usuário poderá requisitar essa funcionalidade antes da submissão do exercício no BOCA e após ter passado pelo teste caso o exercício não estiver correto.
 
 \subsubsection{Boca (\textit{BOCA Online Contest Administrator})}
 
@@ -95,17 +96,15 @@ O Boca funciona através do envio das resoluções realizada por usuários que e
 
 \subsection{Gerenciar Dica}
 
-O cadastro de uma dica pode ser realizado quando o usuário submete um exercício para validação e obtêm êxito, assim o sistema apresentará uma tela perguntando se o usuário deseja contribuir com uma dica, caso aceite, o sistema irá redirecionar o usuário para a tela onde será realizado o cadastro da dica, onde ele irá descrever em um campo a dica que deseja compartilhar. Também será apresentada a solução do mesmo exercício de outro usuário para que seja escrito uma dica. 
+O cadastro de uma dica pode ser realizado quando o usuário submete um exercício para validação e obtêm êxito, assim o sistema apresentará uma tela perguntando se o usuário deseja contribuir com uma dica, caso aceite, o sistema irá redirecionar o usuário para a tela onde será realizado o cadastro da dica, onde ele irá descrever em um campo a dica que deseja compartilhar.
 
 \subsection{Gerenciar Diário}
 
-No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, essa funcionalidade será apresentada aos usuários caso o professor deseja receber o preenchimento do diário dos exercícios da lista. 
-
-Caso o professor pretende receber os diários dos exercícios da lista de sua turma, o usuário após cada submissão da resolução no sistema produzirá um diário que será informado os dados referentes a experiência de realizar o exercício. 
+No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, essa funcionalidade será apresentada aos usuários caso o professor deseja receber o preenchimento do diário dos exercícios da lista. Caso o professor pretende receber os diários dos exercícios da lista de sua turma, o usuário após cada submissão da resolução no sistema produzirá um diário que será informado os dados referentes a experiência de realizar o exercício. 
 
 \subsection{Teste do sistema}
 
-Após o desenvolvimento do sistema ser concluído, será necessário executar uma etapa de teste para encontrar possíveis erros no sistema. Para que essa etapa aconteça, será convocado um grupo de alunos da UTFPR do Curso de Bacharelado em Ciência da Computação de forma voluntária para utilizarem as funcionalidades do sistema, o estudo será realizado em um laboratório com a supervisão de um professor ou aluno. Os alunos deverão reportar os erros encontrados através de criação de \foreign{issues} no \foreign{GitHub} \footnote{\url{https://github.com/gustavoCorreiaGonzalez/aplicacao-tcc }}. Todos os erros serão corrigidos antes de realizar os estudos para avaliar o sistema.
+Após o desenvolvimento do sistema ser concluído, será necessário executar uma etapa de teste para encontrar possíveis erros no sistema. Para que essa etapa aconteça, será convocado um grupo de alunos da UTFPR do Curso de Bacharelado em Ciência da Computação (CBCC) de forma voluntária para utilizarem as funcionalidades do sistema, o estudo será realizado em um laboratório com a supervisão de um professor ou aluno. Os alunos deverão reportar os erros encontrados através de criação de \foreign{issues} no \foreign{GitHub} \footnote{\url{https://github.com/gustavoCorreiaGonzalez/aplicacao-tcc }}. Todos os erros serão corrigidos antes de realizar os estudos para avaliar o sistema.
 
 \section{Estudo de Avaliação}
 
@@ -113,17 +112,17 @@ Esta seção apresentará o formato do estudo, descrevendo como serão realizado
 
 \subsection{Banco de Exercícios}
 
-Para que o estudo e a avaliação do sistema sejam possíveis, será necessário criar um banco de dados de exercícios a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de prevenir que o voluntário do estudo de avaliação do sistema já tenha realizado o exercício. Os exercícios serão divididos em três grupos, o primeiro abordará conceitos básicos da linguagem de programação como entrada e saída de dados, declaração de variáveis e constantes, operações e funções matemáticas. O segundo grupo refere-se a estruturas condicionais e o terceiro grupo trata de estruturas de repetição.
+Para que o estudo e a avaliação do sistema sejam possíveis, será necessário criar um banco de dados de exercícios a partir de exercícios selecionados para diferir dos exercícios realizados na matéria de Algoritmos oferecida pelo curso, a seleção terá a finalidade de prevenir que o voluntário do estudo de avaliação do sistema já tenha realizado o exercício. Os exercícios serão divididos em dois grupos, o primeiro abordará estruturas condicionais e o segundo grupo trata de estruturas de repetição.
 
 \subsection{Banco de Dicas}
 
-Para realizar o estudo UTFPR com os voluntários, será preciso que o sistema já tenha algumas dicas cadastradas no banco de dados. Deste modo, o banco de dicas será provido após a conclusão do banco de exercícios, assim será realizada uma convocação por formulário \foreign{online} aos estudantes da UTFPR do curso de Bacharelado em Ciência da Computação para se voluntariarem a utilizar o sistema de dicas por um determinado período em um dia que será estipulado no formulário. Os voluntários utilizaram o sistema de dicas em um ambiente controlado sendo esse um laboratório da UTFPR com um professor ou aluno monitorando as atividades e tirando as possíveis dúvidas dos participantes. 
+Para realizar o estudo UTFPR com os voluntários, será preciso que o sistema já tenha algumas dicas cadastradas no banco de dados. Deste modo, o banco de dicas será provido após a conclusão do banco de exercícios, assim será realizada uma convocação por formulário \foreign{online} aos estudantes da UTFPR do CBCC para se voluntariarem a utilizar o sistema de dicas por um determinado período em um dia que será estipulado no formulário. Os voluntários utilizaram o sistema de dicas em um ambiente controlado sendo esse um laboratório da UTFPR com um professor ou aluno monitorando as atividades e tirando as possíveis dúvidas dos participantes. 
 
 \begin{figure}[]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=.5\linewidth]{proposta/fluxoreflexao.png}
-	\caption{Fluxos de reflexão para criação de dicas.}
+	\caption{Fluxo de reflexão para criação de dicas. Figura baseada no artigo \cite{Glassman:2016:LPH:2818048.2820011}}
 	\label{figura:fluxoreflexao}
 \end{figure}
 
@@ -131,27 +130,19 @@ Para realizar o estudo UTFPR com os voluntários, será preciso que o sistema j�
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=.5\linewidth]{proposta/fluxocomparacao.png}
-	\caption{Fluxos de comparação para criação de dicas.}
+	\caption{Fluxo de comparação para criação de dicas. Figura baseada no artigo \cite{Glassman:2016:LPH:2818048.2820011}}
 	\label{figura:fluxocomparacao}
 \end{figure}
 
-A criação das dicas ocorrerá conforme dois fluxos de execução, sendo eles: fluxo de reflexão representado pela \cref{figura:fluxoreflexao} e fluxo de comparação representado pela \cref{figura:fluxocomparacao}. Os dois fluxos são iniciados quando o usuário recebe uma lista de exercícios para ser realizada. No momento em que o usuário ter uma lista de exercícios o fluxo de reflexão começa. O sistema irá apresentar um exercício da lista para ser resolvido e o usuário poderá começar a realizar a solução, o aluno poderá requisitar ao sistema que necessita realizar uma consulta a algumas dicas. Deste modo, o sistema apresentará XXXX dicas para o aluno consultar e realizar sua solução.
+A criação das dicas ocorrerá conforme dois fluxos de execução, sendo eles: fluxo de reflexão representado pela \cref{figura:fluxoreflexao} e fluxo de comparação representado pela \cref{figura:fluxocomparacao}. Os dois fluxos são iniciados quando o usuário recebe uma lista de exercícios para ser realizada. No momento em que o usuário ter uma lista de exercícios o fluxo de reflexão começa. O sistema irá apresentar um exercício da lista para ser resolvido e o usuário poderá começar a realizar a solução, o aluno poderá requisitar ao sistema que necessita realizar uma consulta a algumas dicas. Deste modo, o sistema apresentará 5 dicas para o aluno consultar e realizar sua solução.
 
-Após a solução ser concluída, o usuário submete a solução para validação, o BOCO que irá executar a solução do exercício e verificar se está correta ou não. Caso a solução não estiver correta, o sistema redireciona para a etapa de realização de solução, nessa etapa o usuário poderá pedir uma dica para o sistema. Caso a solução estiver correta, o sistema irá redirecionar o usuário para a tela aonde ele criará a dica para o exercício e irá realizar o cadastro dela no banco de dicas.
+Após a solução ser concluída, o usuário submete a solução para validação, o BOCA que irá executar a solução do exercício e verificar se está correta ou não. Caso a solução não estiver correta, o sistema redireciona para a etapa de realização de solução, nessa etapa o usuário poderá pedir 5 dicas para o sistema. Caso a solução estiver correta, o sistema irá redirecionar o usuário para a tela aonde ele criará a dica para o exercício e irá realizar o cadastro dela no banco de dicas.
 
-Após o usuário gerar uma dica do exercício realizado, o sistema irá seguir o fluxo de comparação. Neste fluxo, o sistema irá procurar no banco de dados soluções de outros usuários do exercício realizado. O sistema irá apresentar ao usuário uma das piores e a uma das melhores soluções do exercício para que ele crie uma dica para melhorar as soluções. Para o sistema conseguir distinguir uma boa solução de outra ruim, cada solução será classificada tendo em conta os dados da execução do exercício e as métricas retiradas do código. Na execução do exercício será avaliado o tempo para a resolução correta do exercício, quantidade de dicas utilizadas e quantidades de tentativas erradas. No entanto, as métricas do código serão medidas através do número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução. Com esses dados analisados, o sistema poderá realizar um \foreign{ranking} com as soluções e será considerado 25\% das primeiras posições como o grupo das melhores soluções e 25\% das últimas colocação como sendo o grupo das piores soluções. Assim, o sistema irá retornar para o aluno duas soluções que serão selecionadas de forma aleatória, sendo uma do grupo das melhores soluções e a outra do grupo das piores soluções.
+Após o usuário gerar uma dica do exercício realizado, o sistema irá seguir o fluxo de comparação. Neste fluxo, o sistema irá procurar no banco de dados soluções de outros usuários do exercício realizado. O sistema irá apresentar ao usuário uma das piores e a uma das melhores soluções do exercício realizadas por outros usuários para que ele crie uma dica para melhorar as soluções. Para o sistema conseguir distinguir uma boa solução de uma ruim, cada solução será classificada tendo em conta os dados da execução do exercício e as métricas retiradas do código. Na execução do exercício será avaliado o tempo para a resolução correta do exercício, quantidade de dicas utilizadas e quantidades de tentativas erradas. No entanto, as métricas do código serão medidas através do número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução. Com esses dados analisados, o sistema poderá realizar um \foreign{ranking} com as soluções e será considerado 25\% das primeiras posições como o grupo das melhores soluções e 25\% das últimas colocações como sendo o grupo das piores soluções. Assim, o sistema irá retornar para o aluno duas soluções que serão selecionadas de forma aleatória, sendo uma do grupo das melhores soluções e a outra do grupo das piores soluções.
 
 A partir das soluções apresentadas ao aluno pelo sistema, ele poderá analisar e gerar uma dica para melhorar as soluções. Essas dicas de otimização serão cadastradas no banco de dados de dicas para auxiliar outros usuários na resolução do exercício.
 
 \subsection{Avaliação do Sistema de Dicas}
-
-\begin{figure}[]
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[width=.8\linewidth]{proposta/estudo.png}
-	\caption{Visão geral da aplicação do estudo.}
-	\label{figura:estudo}
-\end{figure}
 
 Nesta subseção será explicado as duas etapas que serão realizadas para responder as duas questões de pesquisa citadas abaixo.
 
@@ -163,7 +154,15 @@ Nesta subseção será explicado as duas etapas que serão realizadas para respo
 	\textit{Quais dicas personalizadas ajudam mais os alunos?}
 \end{itemize}
 
-Enquanto \textbf{QP}\textsubscript{1} tem como objetivo investigar se o mecanismo de dicas irá ajudar os alunos a obterem melhores resultados na resolução de exercícios de programação. \textbf{QP}\textsubscript{2} avaliará qual tipo de dica é melhor, podendo ser aleatorizadas em função do tipo do exercício, geradas a partir de erros cometidos em exercícios passados e sem dicas. Levando em consideração a fonte da dica gerada, podendo ser por alunos iniciantes, alunos experientes ou professores.
+Enquanto \textbf{QP}\textsubscript{1} tem como objetivo investigar se o mecanismo de dicas irá ajudar os alunos a obterem melhores resultados na resolução de exercícios de programação. \textbf{QP}\textsubscript{2} avaliará qual tipo de dica é melhor, podendo ser aleatorizadas em função do tipo do exercício ou geradas a partir de erros cometidos em exercícios passados. Levando em consideração a fonte da dica gerada, podendo ser por alunos iniciantes, alunos experientes ou professores.
+
+\begin{figure}[]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[width=.6\linewidth]{proposta/estudo.png}
+	\caption{Visão geral da aplicação do estudo.}
+	\label{figura:estudo}
+\end{figure}
 
 A primeira etapa consiste em aplicar um estudo controlado na UTFPR para gerar os dados de \foreign{log} de submissões das listas de exercícios. Dessa forma, após a geração dos dados de \foreign{log} a segunda etapa será inicializada. A segunda etapa apresenta as análises que serão feitas para responder as questões de pesquisa.
 
@@ -188,9 +187,9 @@ A primeira etapa consiste em aplicar um estudo controlado na UTFPR para gerar os
 	\end{tabular}
 \end{table}
 
-A Figura \ref{figura:estudo} representa a primeira etapa da avaliação do sistema, onde será necessário a colaboração de voluntários do curso de Bacharelado em Ciência da Computação para o experimento presencial que será realizado na UTFPR, para isso será criado um formulário no \foreign{Google Forms} representado na Tabela \ref{tabela:formulário} e disponibilizado \foreign{online} para os alunos do curso.
+A Figura \ref{figura:estudo} representa a primeira etapa da avaliação do sistema, onde será necessário a colaboração de voluntários do CBCC para o experimento presencial que será realizado na UTFPR, para isso será criado um formulário no \foreign{Google Forms} representado na Tabela \ref{tabela:formulário} e disponibilizado \foreign{online} para os alunos do curso.
 
-Os voluntários serão divididos em três grupos distintos de acordo com o nível de conhecimento em programação, o nível de cada voluntário será estimado de acordo com o tempo que está na graduação e o semestre que se encontra. Os três grupos irão realizar os mesmos exercícios mas utilizaram funcionalidades diferentes do sistema,  
+Os voluntários serão divididos em três grupos distintos de acordo com o nível de conhecimento em programação, o nível de cada voluntário será estimado de acordo com o tempo que está na graduação e o semestre que se encontra. Os três grupos irão realizar os mesmos exercícios mas utilizaram o sistema de três formas diferentes:
 
 \begin{itemize}
 	\item \textbf{Grupo 1}: Utilizará o mecanismo de dicas que prove dicas de acordo com o exercício que o aluno está realizando.
@@ -200,23 +199,42 @@ Os voluntários serão divididos em três grupos distintos de acordo com o níve
 	\item \textbf{Grupo 3}: Utilizará o sistema sem o mecanismo de dicas.
 \end{itemize}
 
-Toda submissão realizada pelos três grupos de voluntários será gravada no \foreign{log} de submissões, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício. Após todos os voluntários tiverem finalizados todos os exercícios da lista, o estudo presencial será finalizado com a aplicação de um questionário representado na Tabela \ref{tabela:questionárioestudo} para avaliar a usabilidade do sistema e a experiência da utilização de um sistema \foreign{web} para solucionar exercícios de programação.
+Toda submissão realizada pelos três grupos de voluntários será gravada no \foreign{log} de submissões, sendo salvo os dados: o usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício. Após todos os voluntários tiverem finalizados todos os exercícios da lista, o estudo presencial será finalizado com a aplicação de um questionário para os voluntários que utilizaram o mecanismo de dicas representado na \cref{tabela:questionárioestudocomdica} e outro questionário para os voluntários que não utilizaram o mecanismo de dicas representado na \cref{tabela:questionárioestudosemdica} para avaliar a usabilidade do sistema e a experiência da utilização de um sistema \foreign{web} para solucionar exercícios de programação.
 
 \begin{table}[]
 	\centering
 	\captionsetup{justification=centering}
-	\caption{Questionário do estudo presencial.}
-	\label{tabela:questionárioestudo}
+	\caption{Questionário do estudo presencial para os voluntários que utilizaram o mecanismo de dicas.}
+	\label{tabela:questionárioestudocomdica}
 	\begin{tabular}{l}
 		\hline
-		Perguntas                        \\ \hline
-		pergunta1?                            \\
-		pergunta2?                           \\
-		pergunta3?                        \\
-		pergunta4?                           \\
-		pergunta5?                           \\
-		pergunta6? \\
-		pergunta7?                        \\ \hline
+		Questionário                        											\\ \hline
+		Foi facil utilizar o \foreign{iHint}?                            				\\
+		Precisou do apoio de uma pessoa para usar o sistema?                           	\\
+		A interface do sistema é agradável?                        						\\
+		O sistema oferece todas as informações necessárias para completar as tarefas?   \\
+		Você recomendaria este sistema para outras pessoas?                           	\\
+		O objetivo do sistema foi alcançado? 											\\ 
+		O mecanismo de dica ajudou na resolução dos exercícios?							\\
+		Foi fácil acessar as dicas pelo sistema?										\\
+		As dicas foram apresentadas de forma clara e objetiva							\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[]
+	\centering
+	\captionsetup{justification=centering}
+	\caption{Questionário do estudo presencial para os voluntários que não utilizaram o mecanismo de dicas.}
+	\label{tabela:questionárioestudosemdica}
+	\begin{tabular}{l}
+		\hline
+		Questionário                        											\\ \hline
+		Foi facil utilizar o \foreign{iHint}?                            				\\
+		Precisou do apoio de uma pessoa para usar o sistema?                           	\\
+		A interface do sistema é agradável?                        						\\
+		O sistema oferece todas as informações necessárias para completar as tarefas?   \\
+		Você recomendaria este sistema para outras pessoas?                           	\\
+		O objetivo do sistema foi alcançado? 											\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -229,4 +247,8 @@ A segunda etapa da avaliação do sistema responderá as duas questões de pesqu
 	\item \textbf{Hipótese 4}: O grupo 2 desenvolverá soluções melhores com a utilização dos mecanismos de dicas personalizadas em relação as soluções do grupo 1.
 \end{itemize}
 
-A segunda questão será respondida com a análise estatística da comparação do desempenho do grupo 1 de voluntário com o grupo 2, será verificado se as dicas dos voluntários mais experientes possuíram melhor avaliação em relação as dicas dos voluntários menos experientes.
+Utilizaremos o método estatístico \foreign{Mann-Whitney-Wilcoxon Test}\footnote{\url{http://www.r-tutor.com/elementary-statistics/non-parametric-methods/mann-whitney-wilcoxon-test}} para analisar as metricas: número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução. Como cada grupo de voluntários contém alunos diferentes, então os dados gerados de cada grupo não afetaram uns aos outros, portanto são independentes. Assim, sem assumir que os dados tem distribuição normal, decidimos em 0,05 o nível de significância se os dados do número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução tem distribuição de dados idênticos. Para testar as hipóteses, será aplicado a função \foreign{Wilcoxon} para comparar as amostras e analisar o valor de \foreign{p} que será retornado. Deste modo, será comparado o valor de \foreign{p} com o nível de significância que é 0,05, caso o valor de \foreign{p} seja menor rejeitamos a hipótese nula, tornando assim a hipótese verdadeira. Caso o valor de \foreign{p} seja maior, aceitamos a hipótese nula e a hipótese será falsa. 
+
+Também será aplicado o teste \foreign{Effect Size} \cite{macbeth2011cliff}, para verificar a significância dos dados gerados por cada grupo de voluntários, será verificado se os dados possuem eventuais diferenças entre as médias ou variâncias. Mas como o estudo presencial não foi realizado, não temos os dados para analise e não foi possível escolher qual método de média ou variância será utilizado.
+
+A segunda questão será respondida com a análise estatística da comparação do desempenho do grupo 1 de voluntário com o grupo 2, será verificado se as dicas dos voluntários mais experientes possuíram melhor avaliação em relação as dicas dos voluntários menos experientes. Os usuário serão divididos em mais experiente e menos experiente através dos dados informados no cadastro, sendo os dados cadastrais: o tempo que está cursando o CBCC, o semestre que está cursando, a quantidade de vezes que cursou a disciplina de Algoritmos, se o usuário teve alguma experiência com programação antes da graduação, se trabalha ou já trabalhou com programação e se é um aluno ou professor. Assim, a partir desses dados será possível classificar os usuários de acordo com sua experiência na faculdade e fora dela. Após ser realizada a classificação dos usuários, será classificada as dicas a partir da avaliação feita pelos voluntários no estudo presencial, assim será analisado que tipo de usuário contribuiu para as dicas que mais ajudaram os voluntários no estudo presencial.
