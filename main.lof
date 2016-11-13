@@ -1,14 +1,14 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Distribui\IeC {\c c}\IeC {\~o}es de FIN, MID e WIC. O gr\IeC {\'a}fico n\IeC {\~a}o inclui os alunos que se retiraram do curso, nem com FIN = 0. Fonte \cite {Cukierman:2015:PSU:2729094.2742623}\relax }}{12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Distribui\IeC {\c c}\IeC {\~o}es de FIN, MID e WIC. O gr\IeC {\'a}fico n\IeC {\~a}o inclui os alunos que se retiraram do curso, nem com FIN = 0. Fonte \cite {Cukierman:2015:PSU:2729094.2742623}\relax }}{10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Vis\IeC {\~a}o geral do m\IeC {\'e}todo proposto.\relax }}{15}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Vis\IeC {\~a}o geral do sistema de dicas.\relax }}{16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Tela de regustro de usu\IeC {\'a}rio.\relax }}{17}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Tela de login no sistema.\relax }}{17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Tela de cadastro de professor.\relax }}{18}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Tela de cadastro de aluno.\relax }}{18}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Vis\IeC {\~a}o geral do m\IeC {\'e}todo proposto.\relax }}{14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Vis\IeC {\~a}o geral do sistema de dicas.\relax }}{15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Tela de regustro de usu\IeC {\'a}rio.\relax }}{16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Tela de login no sistema.\relax }}{16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Tela de cadastro de professor.\relax }}{17}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Tela de cadastro de aluno.\relax }}{17}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Fluxo de reflex\IeC {\~a}o para cria\IeC {\c c}\IeC {\~a}o de dicas. Figura baseada no artigo \cite {Glassman:2016:LPH:2818048.2820011}\relax }}{}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Fluxo de compara\IeC {\c c}\IeC {\~a}o para cria\IeC {\c c}\IeC {\~a}o de dicas. Figura baseada no artigo \cite {Glassman:2016:LPH:2818048.2820011}\relax }}{}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Vis\IeC {\~a}o geral da aplica\IeC {\c c}\IeC {\~a}o do estudo.\relax }}{}

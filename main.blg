@@ -5,7 +5,7 @@ A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: referencial-teorico.aux
 A level-1 auxiliary file: proposta.aux
 A level-1 auxiliary file: cronograma.aux
-The style file: abnt-alf.bst
+The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -14,82 +14,56 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: abnt-options.bib
-Database file #2: main.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: main.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-You can't pop an empty literal stack for entry bosse2015reprovaccoes
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry de2004boca
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Cukierman:2015:PSU:2729094.2742623
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Cummins:2016:IUH:2876034.2893379
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Elkherj:2014:SSR:2556325.2567864
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Glassman:2016:LPH:2818048.2820011
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Helminen:2010:JPV:1879211.1879234
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Holcomb:2016:RCA:2839509.2851062
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Knobelsdorf:2014:TTC:2538862.2538944
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry lahtinen2005study
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Price:2015:IIF:2787622.2787748
-while executing---line 2180 of file abnt-alf.bst
-You can't pop an empty literal stack for entry Sinclair:2015:MSE:2729094.2742586
-while executing---line 2180 of file abnt-alf.bst
 +---------------------------------------------------------+
-| Estilo bibliografico abnt-alf.bst versao 1.52           |
-| Implementa a NBR6023, NBR10520 e NBR10523               |
-| Em caso de duvidas ou problemas com este estilo procure |
-| http://abntex.codigolivre.org.br                        |
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 21 entries,
-            6523 wiz_defined-function locations,
-            1283 strings with 13498 characters,
-and the built_in function-call counts, 15872 in all, are:
-= -- 1393
-> -- 476
-< -- 20
-+ -- 235
-- -- 143
-* -- 1106
-:= -- 1978
-add.period$ -- 80
-call.type$ -- 24
-change.case$ -- 186
-chr.to.int$ -- 32
-cite$ -- 13
-duplicate$ -- 656
-empty$ -- 1410
-format.name$ -- 703
-if$ -- 3991
-int.to.chr$ -- 7
-int.to.str$ -- 3
-missing$ -- 322
-newline$ -- 70
-num.names$ -- 65
-pop$ -- 319
+You've used 19 entries,
+            6714 wiz_defined-function locations,
+            1322 strings with 13833 characters,
+and the built_in function-call counts, 24430 in all, are:
+= -- 2737
+> -- 534
+< -- 448
++ -- 682
+- -- 161
+* -- 1630
+:= -- 2982
+add.period$ -- 90
+call.type$ -- 19
+change.case$ -- 191
+chr.to.int$ -- 22
+cite$ -- 15
+duplicate$ -- 1982
+empty$ -- 1334
+format.name$ -- 767
+if$ -- 5292
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 319
+newline$ -- 80
+num.names$ -- 75
+pop$ -- 389
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 76
 quote$ -- 0
-skip$ -- 1160
+skip$ -- 2199
 stack$ -- 1
-substring$ -- 660
-swap$ -- 353
-text.length$ -- 15
+substring$ -- 1131
+swap$ -- 815
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 11
+type$ -- 12
 warning$ -- 0
-while$ -- 113
+while$ -- 138
 width$ -- 0
-write$ -- 246
-(There were 12 error messages)
+write$ -- 279
