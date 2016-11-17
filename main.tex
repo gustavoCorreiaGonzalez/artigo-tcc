@@ -8,7 +8,7 @@
 \usepackage{graphics}
 \usepackage{subfigure}
 
-% Suporte a tabelas (principalmente do cronograma)
+% Suporte a tabelas (principalmente do cronograma)subsubsection
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{array}
@@ -17,6 +17,7 @@
 \usepackage{xcolor}
 \usepackage{indentfirst}
 \usepackage{lscape}
+\usepackage{float}
 
 % Elementos geralmente utilizados na tabela do cronograma
 \newcommand{\fullcell}{\multicolumn{1}{>{\columncolor[gray]{0.5}}c}{}}
@@ -24,6 +25,12 @@
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\y}{\rule{8pt}{4pt}}
 \newcommand{\n}{\hspace*{8pt}} 
+
+\renewcommand*\thesection{\arabic{section}.0}
+\renewcommand*\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand*\thesubsubsection{%
+  \arabic{section}.\arabic{subsection}.\arabic{subsubsection}%
+}
 
 % Define o caminho das figuras
 \graphicspath{{images/}}
@@ -130,7 +137,6 @@ O elevado nível de reprovação em disciplinas onde são ensinados conceitos b�
 \include{introducao}
 \include{referencial-teorico}
 \include{proposta}
-\include{cronograma}
 
 \bibliographystyle{abntex2-alf}
 \bibliography{main} % geração automática das referências a partir do arquivo main.bib

@@ -4,7 +4,6 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: referencial-teorico.aux
 A level-1 auxiliary file: proposta.aux
-A level-1 auxiliary file: cronograma.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -28,24 +27,24 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 19 entries,
             6714 wiz_defined-function locations,
-            1322 strings with 13833 characters,
-and the built_in function-call counts, 24430 in all, are:
+            1325 strings with 13863 characters,
+and the built_in function-call counts, 24446 in all, are:
 = -- 2737
 > -- 534
 < -- 448
 + -- 682
 - -- 161
-* -- 1630
+* -- 1634
 := -- 2982
 add.period$ -- 90
 call.type$ -- 19
 change.case$ -- 191
 chr.to.int$ -- 22
 cite$ -- 15
-duplicate$ -- 1982
-empty$ -- 1334
+duplicate$ -- 1984
+empty$ -- 1339
 format.name$ -- 767
-if$ -- 5292
+if$ -- 5297
 int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 319
@@ -55,10 +54,10 @@ pop$ -- 389
 preamble$ -- 1
 purify$ -- 76
 quote$ -- 0
-skip$ -- 2199
+skip$ -- 2197
 stack$ -- 1
 substring$ -- 1131
-swap$ -- 815
+swap$ -- 817
 text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
