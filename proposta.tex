@@ -174,7 +174,7 @@ A primeira etapa consiste em aplicar um estudo controlado na UTFPR para gerar os
 		Nome?                            \\
 		Idade?                           \\
 		Telefone?                        \\
-		Email?                           \\
+		E-mail?                          \\
 		Curso?                           \\
 		Tempo que está cursando o curso? \\
 		Qual semestre você está?         \\ 
@@ -206,7 +206,7 @@ Toda submissão realizada pelos três grupos de voluntários será gravada no \f
 	\begin{tabular}{l}
 		\hline
 		Questionário                        											\\ \hline
-		Foi facil utilizar o \foreign{iHint}?                            				\\
+		Foi fácil utilizar o \foreign{iHint}?                            				\\
 		Precisou do apoio de uma pessoa para usar o sistema?                           	\\
 		A interface do sistema é agradável?                        						\\
 		O sistema oferece todas as informações necessárias para completar as tarefas?   \\
@@ -226,7 +226,7 @@ Toda submissão realizada pelos três grupos de voluntários será gravada no \f
 	\begin{tabular}{l}
 		\hline
 		Questionário                        											\\ \hline
-		Foi facil utilizar o \foreign{iHint}?                            				\\
+		Foi fácil utilizar o \foreign{iHint}?                            				\\
 		Precisou do apoio de uma pessoa para usar o sistema?                           	\\
 		A interface do sistema é agradável?                        						\\
 		O sistema oferece todas as informações necessárias para completar as tarefas?   \\
@@ -244,13 +244,13 @@ A segunda etapa da avaliação do sistema responderá as duas questões de pesqu
 	\item \textbf{Hipótese 4}: O grupo 2 desenvolverá soluções melhores com a utilização dos mecanismos de dicas personalizadas em relação as soluções do grupo 1.
 \end{itemize}
 
-Utilizaremos o método estatístico \foreign{Mann-Whitney-Wilcoxon Test}\footnote{\url{http://www.r-tutor.com/elementary-statistics/non-parametric-methods/mann-whitney-wilcoxon-test}} para analisar as metricas: número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução. Como cada grupo de voluntários contém alunos diferentes, então os dados gerados de cada grupo não afetaram uns aos outros, portanto são independentes. Assim, sem assumir que os dados tem distribuição normal, decidimos em 0,05 o nível de significância se os dados do número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução tem distribuição de dados idênticos. 
+Utilizaremos o método estatístico \foreign{Mann-Whitney-Wilcoxon Test}\footnote{\url{http://www.r-tutor.com/elementary-statistics/non-parametric-methods/mann-whitney-wilcoxon-test}} para analisar as métricas: número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução. Como cada grupo de voluntários contém alunos diferentes, então os dados gerados de cada grupo não afetaram uns aos outros, portanto são independentes. Assim, sem assumir que os dados tem distribuição normal, decidimos em 0,05 o nível de significância se os dados do número de linhas entre as tentativas, complexidade ciclomática e tamanho da solução tem distribuição de dados idênticos. 
 
 Deste modo, a hipótese nula é quando os valores que são parte da amostra de cada grupo vem de populações idênticas. Para testar as hipóteses, será aplicado o teste estatístico para comparar as amostras e analisar o valor de \foreign{p} que será retornado, este valor será comparado com o nível de significância e caso o valor de \foreign{p} seja menor, rejeitamos a hipótese nula, tornando assim a hipótese verdadeira. Caso o valor de \foreign{p} seja maior, aceitamos a hipótese nula e a hipótese será falsa. 
 
-Também será aplicado o teste \foreign{Effect Size} \cite{macbeth2011cliff}, para verificar a significância dos dados gerados por cada grupo de voluntários, será verificado se os dados possuem eventuais diferenças entre as médias ou variâncias. Mas como o estudo presencial não foi realizado, não temos os dados para analise e não foi possível escolher qual método de média ou variância será utilizado.
+Também será aplicado o teste \foreign{Effect Size} \cite{macbeth2011cliff}, para verificar a significância dos dados gerados por cada grupo de voluntários, será verificado se os dados possuem eventuais diferenças entre as médias ou variâncias. Mas como o estudo presencial não foi realizado, não temos os dados para análise e não foi possível escolher qual método de média ou variância será utilizado.
 
-A segunda questão será respondida com a análise estatística da comparação do desempenho do grupo 1 de voluntário com o grupo 2, será verificado se as dicas dos voluntários mais experientes possuíram melhor avaliação em relação as dicas dos voluntários menos experientes. Os usuário serão divididos em mais experiente e menos experiente através dos dados informados no cadastro, sendo os dados cadastrais: o tempo que está cursando o CBCC, o semestre que está cursando, a quantidade de vezes que cursou a disciplina de Algoritmos, se o usuário teve alguma experiência com programação antes da graduação, se trabalha ou já trabalhou com programação e se é um aluno ou professor. Assim, a partir desses dados será possível classificar os usuários de acordo com sua experiência na faculdade e fora dela. Após ser realizada a classificação dos usuários, será classificada as dicas a partir da avaliação feita pelos voluntários no estudo presencial, assim será analisado que tipo de usuário contribuiu para as dicas que mais ajudaram os voluntários no estudo presencial.
+A segunda questão será respondida com a análise estatística da comparação do desempenho do grupo 1 de voluntário com o grupo 2, será verificado se as dicas dos voluntários mais experientes possuíram melhor avaliação em relação as dicas dos voluntários menos experientes. Os usuários serão divididos em mais experiente e menos experiente através dos dados informados no cadastro, sendo os dados cadastrais: o tempo que está cursando o CBCC, o semestre que está cursando, a quantidade de vezes que cursou a disciplina de Algoritmos, se o usuário teve alguma experiência com programação antes da graduação, se trabalha ou já trabalhou com programação e se é um aluno ou professor. Assim, a partir desses dados será possível classificar os usuários de acordo com sua experiência na faculdade e fora dela. Após ser realizada a classificação dos usuários, será classificada as dicas a partir da avaliação feita pelos voluntários no estudo presencial, assim será analisado que tipo de usuário contribuiu para as dicas que mais ajudaram os voluntários no estudo presencial.
 
 \section{Cronograma}
 

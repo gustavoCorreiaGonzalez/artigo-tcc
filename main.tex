@@ -8,7 +8,7 @@
 \usepackage{graphics}
 \usepackage{subfigure}
 
-% Suporte a tabelas (principalmente do cronograma)subsubsection
+% Suporte a tabelas (principalmente do cronograma)
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{array}
@@ -17,7 +17,6 @@
 \usepackage{xcolor}
 \usepackage{indentfirst}
 \usepackage{lscape}
-\usepackage{float}
 
 % Elementos geralmente utilizados na tabela do cronograma
 \newcommand{\fullcell}{\multicolumn{1}{>{\columncolor[gray]{0.5}}c}{}}
@@ -25,12 +24,6 @@
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\y}{\rule{8pt}{4pt}}
 \newcommand{\n}{\hspace*{8pt}} 
-
-\renewcommand*\thesection{\arabic{section}.0}
-\renewcommand*\thesubsection{\arabic{section}.\arabic{subsection}}
-\renewcommand*\thesubsubsection{%
-  \arabic{section}.\arabic{subsection}.\arabic{subsubsection}%
-}
 
 % Define o caminho das figuras
 \graphicspath{{images/}}
@@ -94,7 +87,7 @@ O elevado nível de reprovação em disciplinas onde são ensinados conceitos b�
 
 \textbf{Objetivo:} Avaliar o impacto do uso do mecanismo de dicas personalizadas no ensino de conceitos básicos de programação, mais especificamente em estrutura de condição e laço de repetição. Para atingir esse objetivo será realizado um estudo para investigar se o mecanismo de dicas irá ajudar os alunos a obterem melhores resultados na resolução dos exercícios. Também será avaliado qual tipo de usuário (iniciantes, experientes ou professores) ofereceu as dicas que mais ajudaram os alunos.
 
-\textbf{Método:} Será desenvolvido um \foreign{software} para auxiliar o aprendizado de programação baseado no sistema \foreign{Dear Beta} desenvolvido por \citeonline{Glassman:2016:LPH:2818048.2820011}, no qual foi utilizado um mecanismo de dicas para auxilar os alunos no momento da realização de exercícios. Para avaliar o mecanismo de dicas será realizado um estudo controlado com três grupos de alunos distribuídos de forma homogênea em relação ao nível de conhecimento em programação. O primeiro grupo receberá dicas classificadas a partir de erros anteriores, o segundo será com dicas aleatorizadas levando em consideração o assunto abordado no exercício e o terceiro grupo não utilizará o mecanismo de dicas. Os voluntários realizarão uma lista de exercícios e em cada submissão ao sistema de dicas será gravado um \foreign{log} com dados que irão mensurar o desempenho de cada um, assim será realizado o estudo desses dados para responder as questões de pesquisa.
+\textbf{Método:} Será desenvolvido um \foreign{software} para auxiliar o aprendizado de programação baseado no sistema \foreign{Dear Beta} desenvolvido por \citeonline{Glassman:2016:LPH:2818048.2820011}, no qual foi utilizado um mecanismo de dicas para auxiliar os alunos no momento da realização de exercícios. Para avaliar o mecanismo de dicas será realizado um estudo controlado com três grupos de alunos distribuídos de forma homogênea em relação ao nível de conhecimento em programação. O primeiro grupo receberá dicas classificadas a partir de erros anteriores, o segundo será com dicas aleatorizadas levando em consideração o assunto abordado no exercício e o terceiro grupo não utilizará o mecanismo de dicas. Os voluntários realizarão uma lista de exercícios e em cada submissão ao sistema de dicas será gravado um \foreign{log} com dados que irão mensurar o desempenho de cada um, assim será realizado o estudo desses dados para responder as questões de pesquisa.
 
 \textbf{Resultados esperados:} Espera-se que o software ajude no aprendizado dos alunos tornando o ensino de programação mais dinâmico e personalizado. Deste modo, espera-se diminuir o número de reprovações nas matérias introdutórias de programação e desistências do curso de Bacharelado em Ciência da Computação (CBCC).
 
