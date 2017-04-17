@@ -1,4 +1,5 @@
 \chapter{Proposta}
+
 Este capítulo apresentará o método utilizado para a elaboração deste trabalho. Assim, para avaliar o impacto do uso do mecanismo de dicas personalizadas no ensino de conceitos básicos de programação, primeiramente será realizado a implementação do \foreign{iHint} utilizando o \foreign{framework} de desenvolvimento Laravel\footnote{\url{https://laravel.com/}}. Subsequente, será efetuado um estudo com os dados gerados nos experimentos presenciais para realizar a avaliação do sistema. A \cref{figura:visaometodo} ilustra cada etapa a ser realizada para o desenvolvimento da abordagem proposta.
 
 \begin{figure}[ht]
@@ -8,98 +9,7 @@ Este capítulo apresentará o método utilizado para a elaboração deste trabal
 	\label{figura:visaometodo}
 \end{figure}
 
-\section{Implementação do \foreign{iHint}}
-
-Esta seção, descreve o sistema de dicas a ser desenvolvido. O caso de uso da \cref{figura:sistemadicas} apresenta as funcionalidades do \foreign{iHint} que serão modeladas.
-
-\begin{figure}[ht]
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[width=.7\linewidth]{imagens/sistemadicas.png}
-	\caption{Visão geral do sistema de dicas.}
-	\label{figura:sistemadicas}
-\end{figure}
-
-\subsection{Gerenciar Usuário}
-
-Quando um usuário desejar realizar o cadastro no sistema, ele poderá escolher entre a opção de aluno ou professor. O aluno, realiza exercícios disponíveis no banco de dados do sistema, preenche um diário não obrigatório para cada exercício, cria uma dica para cada exercício e consulta seu perfil com seus dados pessoais e um relatório de suas submissões de exercícios. O professor, além de realizar as mesmas atividades do aluno, também poderá criar turmas com exercícios pré-definidos convidando alunos para fazer parte dela e submeter exercícios para o sistema. 
-
-Primeiramente para o usuário se cadastrar no sistema, a primeira etapa é informar o nome, um e-mail e a senha para o cadastro. O sistema irá verificar se o e-mail do usuário está no formato "exemplo@exemplo.com", verificar se o e-mail já está registrado no banco de dados e realizar a comparação do valor do campo de senha com o do campo confirmar senha. Esta funcionalidade já foi implementada conforme a tela do sistema representada na \cref{figura:registrarusuario}.
-
-\begin{figure}[ht]
-	\captionsetup{justification=centering}
-	\includegraphics[width=\linewidth]{imagens/registrarusuario.png}
-	\caption{Tela de registro de usuário.}
-	\label{figura:registrarusuario}
-\end{figure}
-
-Após o usuário estar cadastrado no sistema, ele poderá realizar o \foreign{login} através da tela representada na \cref{figura:logar} informando o e-mail e a senha. Se o usuário estiver realizando o \foreign{login} pela primeira vez, ele terá que escolher se será um aluno ou professor e terá que preencher os campos apresentados nas \cref{figura:cadastroprofessor,figura:cadastroaluno}
-
-\begin{figure}[ht]
-	\captionsetup{justification=centering}
-	\includegraphics[width=\linewidth]{imagens/logar.png}
-	\caption{Tela de login no sistema.}
-	\label{figura:logar}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[width=.8\linewidth]{imagens/cadastroprofessor.png}
-	\caption{Tela de cadastro de professor.}
-	\label{figura:cadastroprofessor}
-\end{figure}
-
-\begin{figure}[ht]		
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[width=.8\linewidth]{imagens/cadastroaluno.png}
-	\caption{Tela de cadastro de aluno.}
-	\label{figura:cadastroaluno}
-\end{figure}
-
-\frontmatter
-
-\subsection{Gerenciar Lista de Exercício}
-
-O professor poderá realizar o cadastro de uma lista de exercícios informando o nome da lista, os exercícios que deseja adicionar, o tempo máximo que um aluno deve realizar a lista. Os exercícios serão adicionados a partir da consulta no banco de dados de exercícios, para realizar a consulta o professor deverá informar o nível da dificuldade que deseja e o tipo do exercício (condicional ou laço de repetição). Desta forma, o sistema irá retornar uma lista com os exercícios que satisfazem a consulta, assim o professor poderá escolher os exercícios que deseja adicionar na lista.
-
-\subsection{Gerenciar Exercício}
-
-Essa funcionalidade do sistema só poderá ser acessada se o usuário for um professor. Sendo assim, o professor terá que cadastrar um enunciado, a linguagem de programação que o aluno deve utilizar para resolver o exercício, o nível (fácil, médio ou difícil), o tipo do exercício (condicional ou laço de repetição), e a resposta que poderá ser escrita em um campo ou um \foreign{upload} do arquivo com as respostas. Cada exercício cadastrado poderá ser agregado a uma lista de exercícios que o professor já tenha cadastrado anteriormente, assim ele poderá criar listas de exercícios personalizadas para cada turma que tenha cadastrado no sistema.
-
-
-\subsection{Gerenciar Turma}
-
-O professor poderá realizar o cadastro de uma turma para adicionar seus alunos e passar as listas de exercícios e acompanhar o rendimento de cada aluno. Para cadastrar uma turma é necessário um nome da turma e um professor, com isso o professor poderá adicionar os alunos desejados ou gerar um código da sua turma através do sistema e disponibilizar para os alunos se cadastrarem.
-
-\subsection{Realizar Exercício}
-
-Após a conclusão do cadastro de usuário, o aluno ou professor terão acesso as funcionalidades específicas de cada tipo de usuário. Dessa forma, o usuário poderá resolver uma lista de exercícios estando vinculado a uma turma, assim ele poderá resolver a lista de exercícios que o professor responsável pela turma criou. Caso o usuário não faça parte de uma turma, ele terá que pesquisar por uma lista de exercícios informando qual assunto, estrutura de condição ou laço de repetição, ele deseja realizar.
-
-Depois que o usuário encontrar uma lista de exercícios, o sistema apresentará os exercícios à serem resolvidos na ordem em que foram adicionados na lista. Antes de começar a resolução da lista de exercícios, o usuário poderá escolher o modo que deseja utilizar: normal ou desafio. O modo normal de resolução não irá contar o tempo que o professor estimou para resolver a lista. Já o modo desafio irá marcar o tempo que o usuário demora para resolver os exercícios da lista e quando esse tempo estimado pelo professor acabar a resolução da lista será finalizada pelo sistema e o tempo será marcado no banco de dados. Assim, o usuário poderá trabalhar em sua solução e submeter ao sistema para correção utilizando a linguagem de programação escolhida pelo professor na criação da lista de exercícios, essa resolução poderá estar correta ou não. Se estiver correta, o sistema apresentará uma mensagem de parabenização e redirecionará o usuário para o próximo exercício. Caso a resolução estiver errada o sistema retornará qual o erro ocorrido na compilação, assim o usuário poderá realizar outras submissões até que consiga obter sucesso na resolução ou requisitar uma dica para o sistema para auxiliá-lo na construção da resposta. 
-
-Cada submissão, tanto correta ou incorreta, é gravada no banco de dados na forma de \foreign{log}, sendo salvo os dados: a usuário que realizou o exercício, todas as submissões, os erros cometidos, o tempo demorado para obter sucesso no exercício, data e dicas utilizadas.
-
-\subsubsection{Utilização das Dicas}
-
-A utilização das dicas poderá ser requisitada quando o usuário estiver realizando a solução de um exercício, o sistema irá apresentar 5 dicas para que o usuário realize sua consulta. O usuário poderá requisitar essa funcionalidade antes da submissão do exercício no BOCA e após ter passado pelo teste caso o exercício não estiver correto.
-
-\subsubsection{Boca (\textit{BOCA Online Contest Administrator})}
-
-Para realizar a compilação dos exercícios no sistema de dicas, será utilizado funções do BOCA, um \foreign{software} livre\footnote{\url{https://github.com/cassiopc/boca/}} desenvolvido por \citeonline{de2004boca}, o BOCA é um sistema de entrega de exercícios, com autenticação, controle de tempo e disponibilização de resultados, tudo em tempo real. Toda a programação do sistema foi feita na linguagem PHP, e assim é portável para todo sistema onde tal linguagem esteja disponível. Para armazenamento dos dados e controle de concorrência é utilizado o banco de dados relacional \foreign{PostgreSQL}. 
-
-O Boca funciona através do envio das resoluções realizada por usuários que enviam um arquivo-fonte para a validação do sistema, o resultado é retornado para o usuário o mais breve possível. No momento em que o usuário submete seu arquivo-fonte, ele poderá escolher a linguagem que o programou e para qual problema ele é destinado. Através do ambiente de janelas do navegador do BOCA, o usuário escolhe o arquivo do disco que deseja submeter e o envia para correção, o BOCA irá compilar esse arquivo-fonte e irá enviar um resultado para o usuário.
-
-\subsection{Gerenciar Dica}
-
-O cadastro de uma dica pode ser realizado quando o usuário submete um exercício para validação e obtêm êxito, assim o sistema apresentará uma tela perguntando se o usuário deseja contribuir com uma dica, caso aceite, o sistema irá redirecionar o usuário para a tela onde será realizado o cadastro da dica, onde ele irá descrever em um campo a dica que deseja compartilhar.
-
-\subsection{Gerenciar Diário}
-
-No processo de execução de um exercício o usuário poderá preencher um diário relatando suas experiências, essa funcionalidade será apresentada aos usuários caso o professor deseja receber o preenchimento do diário dos exercícios da lista. Caso o professor pretende receber os diários dos exercícios da lista de sua turma, o usuário após cada submissão da resolução no sistema produzirá um diário que será informado os dados referentes a experiência de realizar o exercício. 
-
-\subsection{Teste do sistema}
+\section{Teste do Sistema}
 
 Após o desenvolvimento do sistema ser concluído, será necessário executar uma etapa de teste para encontrar possíveis erros no sistema. Para que essa etapa aconteça, será convocado um grupo de alunos da UTFPR do Curso de Bacharelado em Ciência da Computação (CBCC) de forma voluntária para utilizarem as funcionalidades do sistema, o estudo será realizado em um laboratório com a supervisão de um professor ou aluno. Os alunos deverão reportar os erros encontrados através de criação de \foreign{issues} no \foreign{GitHub} \footnote{\url{https://github.com/gustavoCorreiaGonzalez/aplicacao-tcc }}. Todos os erros serão corrigidos antes de realizar os estudos para avaliar o sistema.
 
@@ -251,24 +161,3 @@ Deste modo, a hipótese nula é quando os valores que são parte da amostra de c
 Também será aplicado o teste \foreign{Effect Size} \cite{macbeth2011cliff}, para verificar a significância dos dados gerados por cada grupo de voluntários, será verificado se os dados possuem eventuais diferenças entre as médias ou variâncias. Mas como o estudo presencial não foi realizado, não temos os dados para análise e não foi possível escolher qual método de média ou variância será utilizado.
 
 A segunda questão será respondida com a análise estatística da comparação do desempenho do grupo 1 de voluntário com o grupo 2, será verificado se as dicas dos voluntários mais experientes possuíram melhor avaliação em relação as dicas dos voluntários menos experientes. Os usuários serão divididos em mais experiente e menos experiente através dos dados informados no cadastro, sendo os dados cadastrais: o tempo que está cursando o CBCC, o semestre que está cursando, a quantidade de vezes que cursou a disciplina de Algoritmos, se o usuário teve alguma experiência com programação antes da graduação, se trabalha ou já trabalhou com programação e se é um aluno ou professor. Assim, a partir desses dados será possível classificar os usuários de acordo com sua experiência na faculdade e fora dela. Após ser realizada a classificação dos usuários, será classificada as dicas a partir da avaliação feita pelos voluntários no estudo presencial, assim será analisado que tipo de usuário contribuiu para as dicas que mais ajudaram os voluntários no estudo presencial.
-
-\section{Cronograma}
-
-A \cref{tabela:cronograma} apresenta o cronograma das tarefas a serem realizadas futuramente.
-
-\begin{table}[ht]
-	\captionsetup{justification=centering}
-	\caption{Cronograma}
-	\label{tabela:cronograma}
-	\begin{tabular}{|l|c|c|c|c|c|c|}
-		\hline
-		& Janeiro & Fevereiro & Março & Abril & Maio & Junho \\ \hline
-		Implementação do Sistema 		& X       & X         &       &       &      &       \\ \hline
-		Escrita do Trabalho      		&         & X         & X     & X     & X    & X     \\ \hline
-		Teste do Sistema         		&         &           & X     &       &      &       \\ \hline
-		Banco de Exercícios      		&         &           & X     &       &      &       \\ \hline
-		Banco de Dicas           		&         &           &       & X     &      &       \\ \hline
-		Avaliação do Sistema de Dicas   &         &           &       & X     & X    &       \\ \hline
-		Defesa                     		&         &           &       &       &      & X     \\ \hline
-		\end{tabular}
-		\end{table}

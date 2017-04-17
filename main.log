@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  16 NOV 2016 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.31)  17 APR 2017 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,7 +1107,8 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 LaTeX Warning: Unused global option(s):
     [12pt,a4paper,oneside].
 
-(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux))
+(./main.aux (./introducao.aux) (./delimitacao.aux) (./problemaspremissas.aux)
+(./objetivos.aux) (./proposta.aux) (./demonstrativo.aux) (./cronograma.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
@@ -1275,9 +1276,7 @@ Package cleveref Info: loaded `english' language definitions on input line 90.
 
 [4
 
-] (./main.toc
-Package cleveref Info: loaded `english' language definitions on input line 9.
-)
+] (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1300,226 +1299,175 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 7.
-Package cleveref Info: loaded `english' language definitions on input line 11.
-[6
+Package cleveref Info: loaded `english' language definitions on input line 9.
+) [6
 
 
 
 ]
-Package cleveref Info: loaded `english' language definitions on input line 13.
-) [7]
-\openout2 = `referencial-teorico.aux'.
+\openout2 = `delimitacao.aux'.
 
- (./referencial-teorico.tex
+ (./delimitacao.tex
 Cap\'{\i }tulo 2.
-[8
+) [7
 
 
 
 ]
-Overfull \hbox (21.71155pt too wide) in paragraph at lines 37--43
- [][] 
- []
+\openout2 = `problemaspremissas.aux'.
 
-[9]
-Package cleveref Info: loaded `english' language definitions on input line 49.
-Package cleveref Info: loaded `english' language definitions on input line 49.
-Package cleveref Info: loaded `english' language definitions on input line 49.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 52.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package cleveref Info: loaded `english' language definitions on input line 56.
-Package cleveref Info: loaded `english' language definitions on input line 56.
-Package cleveref Info: loaded `english' language definitions on input line 56.
+ (./problemaspremissas.tex
+Cap\'{\i }tulo 3.
+Package cleveref Info: loaded `english' language definitions on input line 5.
+) [8
 
-<imagens/cukierman.png, id=50, 919.435pt x 517.935pt>
-File: imagens/cukierman.png Graphic file (type png)
 
-<use imagens/cukierman.png>
-Package pdftex.def Info: imagens/cukierman.png used on input line 64.
-(pdftex.def)             Requested size: 375.57782pt x 211.57231pt.
-Package cleveref Info: loaded `english' language definitions on input line 69.
- [10 <./imagens/cukierman.png>] [11]
-Package cleveref Info: loaded `english' language definitions on input line 81.
- [12]
-Package cleveref Info: loaded `english' language definitions on input line 87.
-Package cleveref Info: loaded `english' language definitions on input line 87.
-Package cleveref Info: loaded `english' language definitions on input line 89.
-Package cleveref Info: loaded `english' language definitions on input line 89.
-) [13]
+
+]
+\openout2 = `objetivos.aux'.
+
+ (./objetivos.tex
+Cap\'{\i }tulo 4.
+) [9
+
+
+
+]
 \openout2 = `proposta.aux'.
 
-
-(./proposta.tex
-Cap\'{\i }tulo 3.
-Package cleveref Info: loaded `english' language definitions on input line 2.
-Package cleveref Info: loaded `english' language definitions on input line 2.
+ (./proposta.tex
+Cap\'{\i }tulo 5.
+Package cleveref Info: loaded `english' language definitions on input line 3.
+Package cleveref Info: loaded `english' language definitions on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 2.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 2.
-<imagens/visaogeraldometodoproposto.png, id=65, 716.6775pt x 144.54pt>
+(Font)              <5> on input line 3.
+<imagens/visaogeraldometodoproposto.png, id=47, 716.6775pt x 144.54pt>
 File: imagens/visaogeraldometodoproposto.png Graphic file (type png)
 
 <use imagens/visaogeraldometodoproposto.png>
 Package pdftex.def Info: imagens/visaogeraldometodoproposto.png used on input l
-ine 6.
+ine 7.
 (pdftex.def)             Requested size: 469.47049pt x 94.6843pt.
-Package cleveref Info: loaded `english' language definitions on input line 11.
-Package cleveref Info: loaded `english' language definitions on input line 13.
-
-<imagens/sistemadicas.png, id=67, 605.26125pt x 555.07375pt>
-File: imagens/sistemadicas.png Graphic file (type png)
-
-<use imagens/sistemadicas.png>
-Package pdftex.def Info: imagens/sistemadicas.png used on input line 18.
-(pdftex.def)             Requested size: 328.6279pt x 301.37848pt.
- [14
+Package cleveref Info: loaded `english' language definitions on input line 14.
+Package cleveref Info: loaded `english' language definitions on input line 14.
+ [10
 
 
 
  <./imagens/visaogeraldometodoproposto.png>]
-<imagens/registrarusuario.png, id=75, 1371.1225pt x 624.3325pt>
-File: imagens/registrarusuario.png Graphic file (type png)
-
-<use imagens/registrarusuario.png>
-Package pdftex.def Info: imagens/registrarusuario.png used on input line 31.
-(pdftex.def)             Requested size: 469.47049pt x 213.7659pt.
-Package cleveref Info: loaded `english' language definitions on input line 36.
-Package cleveref Info: loaded `english' language definitions on input line 36.
-
-<imagens/logar.png, id=76, 1371.1225pt x 624.3325pt>
-File: imagens/logar.png Graphic file (type png)
- <use imagens/logar.png>
-Package pdftex.def Info: imagens/logar.png used on input line 40.
-(pdftex.def)             Requested size: 469.47049pt x 213.7659pt.
-
-<imagens/cadastroprofessor.png, id=77, 1358.07375pt x 855.195pt>
-File: imagens/cadastroprofessor.png Graphic file (type png)
-
-<use imagens/cadastroprofessor.png>
-Package pdftex.def Info: imagens/cadastroprofessor.png used on input line 48.
-(pdftex.def)             Requested size: 375.57782pt x 236.50385pt.
-
-<imagens/cadastroaluno.png, id=78, 1358.07375pt x 1217.54875pt>
-File: imagens/cadastroaluno.png Graphic file (type png)
-
-<use imagens/cadastroaluno.png>
-Package pdftex.def Info: imagens/cadastroaluno.png used on input line 56.
-(pdftex.def)             Requested size: 375.57782pt x 336.71263pt.
- [15 <./imagens/sistemadicas.png>] [16 <./imagens/registrarusuario.png> <./imag
-ens/logar.png>] [17 <./imagens/cadastroprofessor.png> <./imagens/cadastroaluno.
-png>]
-Package cleveref Info: loaded `english' language definitions on input line 69.
- [18
-
-]
-Package cleveref Info: loaded `english' language definitions on input line 82.
-Package cleveref Info: loaded `english' language definitions on input line 90.
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [19]
-Package cleveref Info: loaded `english' language definitions on input line 104.
-
-Package cleveref Info: loaded `english' language definitions on input line 104.
-
- [20]
-Package cleveref Info: loaded `english' language definitions on input line 116.
-
-
-<imagens/fluxoreflexao.png, id=103, 379.4175pt x 374.39874pt>
+Package cleveref Info: loaded `english' language definitions on input line 26.
+ <imagens/fluxoreflexao.png, id=57, 379.4175pt x 374.39874pt>
 File: imagens/fluxoreflexao.png Graphic file (type png)
 
 <use imagens/fluxoreflexao.png>
-Package pdftex.def Info: imagens/fluxoreflexao.png used on input line 121.
+Package pdftex.def Info: imagens/fluxoreflexao.png used on input line 31.
 (pdftex.def)             Requested size: 234.73524pt x 231.63351pt.
 
-<imagens/fluxocomparacao.png, id=104, 411.5375pt x 394.47375pt>
+<imagens/fluxocomparacao.png, id=58, 411.5375pt x 394.47375pt>
 File: imagens/fluxocomparacao.png Graphic file (type png)
 
 <use imagens/fluxocomparacao.png>
-Package pdftex.def Info: imagens/fluxocomparacao.png used on input line 129.
+Package pdftex.def Info: imagens/fluxocomparacao.png used on input line 39.
 (pdftex.def)             Requested size: 234.73524pt x 225.00284pt.
- [21 <./imagens/fluxoreflexao.png>]
-Package cleveref Info: loaded `english' language definitions on input line 138.
+Package cleveref Info: loaded `english' language definitions on input line 48.
+ [11] [12 <./imagens/fluxoreflexao.png> <./imagens/fluxocomparacao.png>]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 57.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package cleveref Info: loaded `english' language definitions on input line 60.
 
- [22 <./imagens/fluxocomparacao.png>]
-Package cleveref Info: loaded `english' language definitions on input line 150.
-
-
-<imagens/estudo.png, id=113, 643.40375pt x 324.21124pt>
+<imagens/estudo.png, id=69, 643.40375pt x 324.21124pt>
 File: imagens/estudo.png Graphic file (type png)
 
 <use imagens/estudo.png>
-Package pdftex.def Info: imagens/estudo.png used on input line 159.
+Package pdftex.def Info: imagens/estudo.png used on input line 69.
 (pdftex.def)             Requested size: 281.68515pt x 141.94595pt.
-Package cleveref Info: loaded `english' language definitions on input line 164.
+Package cleveref Info: loaded `english' language definitions on input line 74.
+Package cleveref Info: loaded `english' language definitions on input line 74.
+Package cleveref Info: loaded `english' language definitions on input line 97.
+Package cleveref Info: loaded `english' language definitions on input line 97.
+ [13 <./imagens/estudo.png>]
+Package cleveref Info: loaded `english' language definitions on input line 109.
 
-Package cleveref Info: loaded `english' language definitions on input line 164.
+Package cleveref Info: loaded `english' language definitions on input line 109.
 
-Package cleveref Info: loaded `english' language definitions on input line 187.
+Package cleveref Info: loaded `english' language definitions on input line 119.
 
-Package cleveref Info: loaded `english' language definitions on input line 187.
+Package cleveref Info: loaded `english' language definitions on input line 139.
 
- [23 <./imagens/estudo.png>]
-Package cleveref Info: loaded `english' language definitions on input line 199.
+Package cleveref Info: loaded `english' language definitions on input line 148.
 
-Package cleveref Info: loaded `english' language definitions on input line 199.
-
-Package cleveref Info: loaded `english' language definitions on input line 209.
-
-Package cleveref Info: loaded `english' language definitions on input line 229.
-
-Package cleveref Info: loaded `english' language definitions on input line 238.
-
- [24]
-Package cleveref Info: loaded `english' language definitions on input line 247.
+ [14]
+Package cleveref Info: loaded `english' language definitions on input line 157.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--247
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 [][]$\T1/lmr/m/n/10 (+20) <[]http : / / www . r-[]tutor . com / elementary-[]st
 atistics / non-[]parametric-[]methods /
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 249.
+Package cleveref Info: loaded `english' language definitions on input line 159.
 
-Package cleveref Info: loaded `english' language definitions on input line 249.
+Package cleveref Info: loaded `english' language definitions on input line 159.
 
-Package cleveref Info: loaded `english' language definitions on input line 249.
+Package cleveref Info: loaded `english' language definitions on input line 159.
 
-Package cleveref Info: loaded `english' language definitions on input line 251.
+[15]
+Package cleveref Info: loaded `english' language definitions on input line 161.
 
-[25]) [26] (./main.bbl [27
+) [16]
+\openout2 = `demonstrativo.aux'.
+
+ (./demonstrativo.tex
+Cap\'{\i }tulo 6.
+Package cleveref Info: loaded `english' language definitions on input line 3.
+) [17
 
 
-]) [28] 
+
+]
+\openout2 = `cronograma.aux'.
+
+ (./cronograma.tex
+Cap\'{\i }tulo 7.
+) [18
+
+
+
+] (./main.bbl [19
+
+
+]) [20] 
 AED: lastpage setting LastPage
-(./main.aux (./introducao.aux) (./referencial-teorico.aux) (./proposta.aux)) )
+(./main.aux (./introducao.aux) (./delimitacao.aux) (./problemaspremissas.aux)
+(./objetivos.aux) (./proposta.aux) (./demonstrativo.aux) (./cronograma.aux)) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 91 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15253 strings out of 493029
- 244824 string characters out of 6136234
- 418253 words of memory out of 5000000
- 18190 multiletter control sequences out of 15000+600000
- 100957 words of font info for 133 fonts, out of 8000000 for 9000
+ 15191 strings out of 493029
+ 243434 string characters out of 6136234
+ 416253 words of memory out of 5000000
+ 18129 multiletter control sequences out of 15000+600000
+ 91088 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,16n,94p,1438b,9832s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,94p,1415b,9749s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/tex
 mf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmss17.pfb>
-Output written on main.pdf (30 pages, 571445 bytes).
+type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb>
+Output written on main.pdf (22 pages, 361216 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 135 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 27207 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 26153 words of extra memory for PDF output out of 29859 (max. 10000000)
 
