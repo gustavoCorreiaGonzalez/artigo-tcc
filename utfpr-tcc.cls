@@ -212,9 +212,8 @@
 }
 
 \renewcommand{\@goalfulltext}{
-	\@goal{} apresentado à disciplina de \@course, do \@program{} do \@universityunit{}
-	da \@university{}, como requisito parcial para obtenção do título de \@degree{}
-	em \@degreearea{}.
+	\@goal{} \@course, do \@program{} do \@universityunit{}
+	da \@university{}.
 }
 
 
@@ -422,7 +421,7 @@
 }
 
 % Pretty chapter start at backmatter
-\newpagestyle{backmatter}{
+\newpagestyle{backmatter}[\small\sffamily]{
 	\sethead{}{}{\thepage}
 	\setfoot{}{}{}
 }
@@ -448,7 +447,6 @@
 
 \renewcommand\backmatter{%
 	\cleardoublepage
-	\@mainmatterfalse
 	\pagestyle{backmatter}
 	\pagenumbering{arabic}
 	\titlespacing{\chapter}{0pt}{0em}{2em}[0pt]
@@ -689,14 +687,14 @@
 \captionsetup{labelformat=default}
 \captionsetup{labelsep=period}
 \captionsetup{justification=justified}
-\captionsetup{singlelinecheck=false}
+\captionsetup{singlelinecheck=true}
 \captionsetup{labelfont=bf}
 \captionsetup{parskip=4pt}
 \captionsetup{margin=\floatmargin}
 \captionsetup[table]{position=top}
 \captionsetup{font={singlespacing,small}}
 \setlength{\abovecaptionskip}{4pt}
-
+\captionsetup[subfloat]{justification=centering}
 
 
 
@@ -804,15 +802,34 @@
 % \hbadness 1414
 % \raggedbottom
 
-% Don't bother to report overfull boxes if over-edge is < 1pc
+% Do not bother to report overfull boxes if over-edge is < 1pc
 \vfuzz 1pc
 \hfuzz 1pc
 
-% Not actually required, but it makes latex2rtf happy :)
-%\RequirePackage{ifthen}
-%\@ifpackageloaded{acronym}
-%       {}
-%       {\RequirePackage[printonlyused, withpage]{acronym}}
+% Lista de acronimos
+\RequirePackage[printonlyused, withpage]{acronym}
+
+% Redefinicao do ambiente utilizado pela lista de acronimos, corrigindo o espacamento
+% entre os itens.
+\renewenvironment{AC@deflist}[1]{
+        \raggedright
+        \begin{list}{}{
+%               \Nospacing
+                \settowidth{\labelwidth}{\textbf{\textsf{#1}}}
+                \setlength{\leftmargin}{\labelwidth}
+                \addtolength{\leftmargin}{\labelsep}
+                \renewcommand{\makelabel}{\aclabelfont}
+        }
+}{
+        \end{list}
+}
+
+\newcommand{\listofacronyms}[1]{
+        \cleardoublepage{}
+        \chapter*{\listofacronymsname}
+        \input{#1}
+        \acresetall{}
+}
 
 
 
@@ -906,16 +923,16 @@
 \let\origappendix=\appendix
 \renewcommand\appendix{
 	\origappendix
-	\cleardoublepage
-	\addappheadtotoc
-	\appendixpage
+ 	\cleardoublepage
+ 	\addappheadtotoc
+ 	\appendixpage
 }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % References
 
-\RequirePackage[alf,abnt-full-initials=yes,abnt-missing-year=sd,abnt-doi=doi]{abntex2cite}
+\RequirePackage[alf,abnt-full-initials=yes,abnt-missing-year=sd,abnt-doi=doi,abnt-etal-cite=2]{abntex2cite}
 
 % Do no use uppercase for \bibname.
 \renewenvironment{thebibliography}[1]{
